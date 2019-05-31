@@ -1,0 +1,6 @@
+name: My Block Example
+type: module
+description: Defines a custom block.
+core: 8.x
+dependencies:
+  - block
