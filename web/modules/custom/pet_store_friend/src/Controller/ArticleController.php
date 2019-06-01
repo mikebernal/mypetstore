@@ -3,33 +3,32 @@
   namespace Drupal\pet_store_friend\Controller;
 
   class ArticleController {
-      
-      public function __construct() {
+ 
+    private $url;
+    private $json;
+    private $data;
+    private $len;
+    private $articles;
 
-      }
+    public function __construct() {
+      $this->url      = 'https://jsonplaceholder.typicode.com/posts';
+      $this->json     = file_get_contents($this->url);
+      $this->data     = json_decode($this->json, TRUE);
+      $this->len      = count($this->data);
+      $this->articles = array_slice($this->data, ($this->len - 10), $this->len);
 
-      public function articles() {
+    }
 
-        $data     = file_get_contents('https://jsonplaceholder.typicode.com/posts');
-        $articles = json_decode($data, TRUE);
-        $len      = count($articles);
-        $latest   = array_slice($articles, ($len - 10), $len);
+    public function getArticles() {
 
-        // Sort array into descening
-        arsort($latest);
-        $list = [];
+      arsort($this->articles);
 
-        // Store sorted array into the new array
-        foreach($latest as $post) {
-          array_push($list, $post);
-        }
+      return array(
+        '#theme' => 'article_list',
+        '#items' => $this->articles,
+        '#title' => 'Friends pet blog'
+      );
 
-        return array(
-          '#theme'    => 'article_list',
-          '#items'    => $list,
-          '#title'    => 'Friends pet blog'
-        );
-
-      }
+    }
 
   }
