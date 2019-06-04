@@ -17,6 +17,14 @@ $kernel = new DrupalKernel('prod', $autoloader);
 
 $request = Request::createFromGlobals();
 $response = $kernel->handle($request);
+
+// try {
+//     \Drupal::entityDefinitionUpdateManager()->applyUpdates();
+//   }
+//   catch (EntityStorageException $e) {
+//     print_r($e);
+//   }
+
 $response->send();
 
 $kernel->terminate($request, $response);
