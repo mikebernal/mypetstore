@@ -2,15 +2,14 @@
 <h1>{{ title }}</h1>
     {% for article in items %}
         <div class="container friends-pet-blog-list">
-            <h1 class="friends-pet-blog-list__id">{{ article.id }}</h1>
-            <h1 class="friends-pet-blog-list__title">{{ article.title }}</h1>
+            <h2 class="friends-pet-blog-list__title">{{ article.title }}</h2>
             <p class="friends-pet-blog-list__body">{{ article.body }}</p>
             <hr>
         </div>
     {% endfor %}
 {% else %}
-<div class="pet-store-friends--panel__offset">
-    <h2 class="pet-store-friends--panel__offset__title">{{items['title']}}</h2>
-    <p class="pet-store-friends--panel__offset__body">{{items['body']}}</p>
+<div class="pet-store-friends--panel--offset">
+    <h2 class="pet-store-friends--panel--offset__title">{{items['title']}}</h2>
+    <p class="pet-store-friends--panel--offset__body">{{items['body']}}</p>
 </div>
 {% endif %}

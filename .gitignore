@@ -26,3 +26,6 @@
 # Ignore sql file for creating tables manually
 /web/webform_submission.sql
 /web/webform.sql
+
+#// npm front
+/node_modules

@@ -11,6 +11,7 @@
     private $articles;
 
     public function __construct() {
+      
       $this->url      = 'https://jsonplaceholder.typicode.com/posts';
       $this->json     = file_get_contents($this->url);
       $this->data     = json_decode($this->json, TRUE);

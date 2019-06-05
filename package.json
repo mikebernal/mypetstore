@@ -12,5 +12,12 @@
   },
   "author": "Mike Bernal",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/mikebernal/mypetstore#readme"
+  "homepage": "https://bitbucket.org/mikebernal/mypetstore#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-pipe": "^1.0.4",
+    "gulp-sass": "^4.0.2",
+    "rename": "^1.0.4"
+  }
 }

@@ -1,10 +1,111 @@
-/* VARIABLES STYLES */
+/* VARIABLES STYLES
+ * COLOUR PALETTE (???) by sugar!
+ * URL: https://www.colourlovers.com/palette/629637/()
+ */
 /* MIXINS  */
 /* PLUGINS STYLES */
 /* BASE STYLES */
+*::before, *, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: #83af9b; }
+
 /* LAYOUT STYLES */
+/* FRONT PAGE */
+.region {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center; }
+
+.region-header {
+  background: #fc9d9a;
+  justify-content: space-between;
+  padding: .5em; }
+
+.region-content {
+  background: none;
+  flex-direction: column; }
+  .region-content .view-animal-news .view-content {
+    background: #c8c8a9; }
+  .region-content .block-pet-store-friend {
+    background: blue; }
+
+.region-footer {
+  background: black;
+  color: white;
+  flex-direction: column; }
+
+/* Hero Panel Styles */
+#block-goldfishonsale {
+  background: none; }
+  #block-goldfishonsale .field--name-block-description {
+    background: none; }
+    #block-goldfishonsale .field--name-block-description h2 {
+      background: none; }
+  #block-goldfishonsale .field--name-field-cta {
+    background: orange; }
+    #block-goldfishonsale .field--name-field-cta a {
+      background: blue; }
+  #block-goldfishonsale .field--name-field-image {
+    width: 1026px;
+    height: 307px;
+    background: none; }
+    #block-goldfishonsale .field--name-field-image img {
+      width: 100%;
+      height: 100%; }
+  #block-goldfishonsale .field--name-body {
+    background: none;
+    padding: 4em;
+    background: #fc9d9a; }
+
+/* Browse Animals Styles */
+#block-views-block-browse-animals-machine-1 {
+  background: none; }
+  #block-views-block-browse-animals-machine-1 h2 {
+    color: green;
+    margin: 1em; }
+  #block-views-block-browse-animals-machine-1 .view-browse-animals .view-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4em; }
+    #block-views-block-browse-animals-machine-1 .view-browse-animals .view-content .views-row {
+      background: none; }
+      #block-views-block-browse-animals-machine-1 .view-browse-animals .view-content .views-row .field--type-image {
+        height: 177px;
+        width: 264px;
+        background: none; }
+        #block-views-block-browse-animals-machine-1 .view-browse-animals .view-content .views-row .field--type-image img {
+          max-width: 100%;
+          height: 100%; }
+      #block-views-block-browse-animals-machine-1 .view-browse-animals .view-content .views-row h2 {
+        margin: .5em 0;
+        color: black; }
+      #block-views-block-browse-animals-machine-1 .view-browse-animals .view-content .views-row .node__links a {
+        color: black; }
+  #block-views-block-browse-animals-machine-1 .more-link {
+    text-align: center;
+    margin: 2em 0; }
+
 /* MODULES STYLES */
+/* Main Nav Style */
+#block-zero-branding img {
+  background: red; }
+
+nav.menu--main {
+  display: flex; }
+  nav.menu--main ul.menu {
+    margin: auto; }
+    nav.menu--main ul.menu li.menu-item {
+      display: inline-block; }
+
 /* STATE STYLES */
 /* THEMES STYLES */
-
-/*# sourceMappingURL=app.css.map */
