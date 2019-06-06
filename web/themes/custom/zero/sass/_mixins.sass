@@ -1,2 +1,10 @@
 /* MIXINS  */
-    
+
+@mixin hero-overlay($top)
+    position: absolute
+    top: $top
+    right: 0
+    bottom: 0
+    left: 0
+    transform: translateY(-$top)
+    overflow: hidden
