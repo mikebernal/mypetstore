@@ -50,9 +50,9 @@ a {
     overflow: hidden; }
     #block-goldfishonsale .field--name-block-description h2 {
       width: 100%;
-      padding: 3em;
+      padding: 6em;
       margin: 0 auto;
-      background: rgba(0, 0, 0, 0.2); }
+      background: rgba(255, 255, 255, 0.2); }
   #block-goldfishonsale .field--name-field-cta {
     position: absolute;
     top: 70%;
@@ -150,7 +150,7 @@ a {
         text-align: justify;
         overflow: hidden;
         height: 150px;
-        flex: 3; }
+        flex: 2; }
       .block-views-blockanimal-news-block-1 div .view-animal-news .view-content .views-view-grid .views-row .node--view-mode-teaser .group-right .field--name-field-posted {
         flex: 1; }
         .block-views-blockanimal-news-block-1 div .view-animal-news .view-content .views-view-grid .views-row .node--view-mode-teaser .group-right .field--name-field-posted .field__item {
@@ -161,9 +161,58 @@ a {
     .block-views-blockanimal-news-block-1 div .more-link a {
       color: black; }
 
-/* PEt store friends panel style (FRONT) */
-.block-pet-store-friend {
-  background: blue; }
+/* Pet store panel front */
+#block-petstorefriends .block-content--type-pet-store-friends-panel {
+  display: flex;
+  flex-direction: row;
+  padding: 2em; }
+  #block-petstorefriends .block-content--type-pet-store-friends-panel .group-left .field--type-image {
+    padding: 1em .5em 1em 5em;
+    width: 100%;
+    height: 100%; }
+    #block-petstorefriends .block-content--type-pet-store-friends-panel .group-left .field--type-image img {
+      width: 100%;
+      height: 100%; }
+  #block-petstorefriends .block-content--type-pet-store-friends-panel .group-right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1em;
+    position: relative; }
+    #block-petstorefriends .block-content--type-pet-store-friends-panel .group-right .field--name-field-heading {
+      flex: 0;
+      padding: 1em 0 0 0;
+      font-weight: bold;
+      line-height: 2; }
+    #block-petstorefriends .block-content--type-pet-store-friends-panel .group-right .field--name-field-subheading {
+      flex: 0; }
+    #block-petstorefriends .block-content--type-pet-store-friends-panel .group-right .field--name-field-read-more {
+      flex: 0;
+      justify-content: flex-end;
+      margin-top: auto;
+      padding: 1em; }
+
+/* Latest article div (FRONT) */
+#block-latestarticle {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px dotted rgba(0, 0, 0, 0.1);
+  top: 80px;
+  left: -60px;
+  width: 35vw; }
+  #block-latestarticle .pet-store-friends--panel--offset {
+    text-align: left;
+    padding: .3em; }
+    #block-latestarticle .pet-store-friends--panel--offset h2 {
+      padding: .5em 0;
+      font-weight: lighter;
+      line-height: 1; }
+
+/* Animal Page Styles */
+.view-browse-animals {
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
 
 /* MODULES STYLES */
 /* Main Nav Style */
@@ -182,5 +231,23 @@ nav.menu--main {
     nav.menu--main ul.menu li.menu-item:last-child {
       border-right: 0; }
 
+/* Menu footer styles */
+nav.menu--footer {
+  margin: 0 auto;
+  padding: 2em 0; }
+  nav.menu--footer ul .menu-item {
+    display: inline-block;
+    border-right: 1px solid #83af9b;
+    padding: .4em; }
+  nav.menu--footer ul li:last-child {
+    border-right: 0; }
+
 /* STATE STYLES */
+/*  State link */
+nav.menu--footer ul li a:link,
+nav.menu--footer ul li a:visited,
+nav.menu--footer ul li a:hover,
+nav.menu--footer ul li a:active {
+  color: white; }
+
 /* THEMES STYLES */
