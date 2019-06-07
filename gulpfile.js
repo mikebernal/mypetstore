@@ -4,9 +4,6 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('browserSync', function() {
     browserSync.init({
-        // Local URL http://localhost:3000 not serving updates
-        // Go 192.168.56.1:3000 instead
-        // Could it be because I am serving it on a proxy?
         proxy: 'mypetstore.local',
     });
 });
