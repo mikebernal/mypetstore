@@ -1,6 +1,0 @@
-name: remote articles
-type: module
-core: 8.x
-description: Fetch post from json placeholder
-dependencies:
-  - block

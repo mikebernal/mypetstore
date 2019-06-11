@@ -2,11 +2,11 @@
 /**
  *{@inheritdoc}
  */
-namespace Drupal\remote_articles;
+namespace Drupal\pet_store_friend;
 
 use Drupal\Component\Serialization\Json;
 
-class RemoteArticlesClient {
+class PetStoreFriendClient {
 
   /**
    * @var \GuzzleHttp\Client
@@ -25,7 +25,7 @@ class RemoteArticlesClient {
   }
 
   /**
-   * Get some random articles
+   * Get articles
    *
    * @return array
    */

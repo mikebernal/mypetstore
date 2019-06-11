@@ -1,0 +1,5 @@
+services:
+  pet_store_friend_client:
+    class: Drupal\pet_store_friend\PetStoreFriendClient
+    arguments:
+      - '@http_client_factory'

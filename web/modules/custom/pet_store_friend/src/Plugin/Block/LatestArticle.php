@@ -3,7 +3,8 @@
 namespace Drupal\pet_store_friend\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Drupal\pet_store_friend\Controller\ArticleController;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a block with a simple text.
@@ -14,21 +15,54 @@ use Drupal\pet_store_friend\Controller\ArticleController;
  * )
  */
 
-class LatestArticle extends BlockBase {
+class LatestArticle extends BlockBase implements ContainerFactoryPluginInterface {
   
-  public function build() {
+    /**
+   * @var \Drupal\remote_articles\RemoteArticlesClient
+   */
+  protected $remoteArticlesClient;
 
-    $controller = new ArticleController();
+  /**
+   * RemoteArticles constructor.
+   *
+   * @param array $configuration
+   * @param $plugin_id
+   * @param $plugin_definition
+   * @param $remote_articles_client \Drupal\remote_articles\remoteArticlesClient
+   */
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, $remote_articles_client) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition);
+    $this->remoteArticlesClient = $remote_articles_client;
+  }
 
-    $article = $controller->getArticles();
-    $recent  = reset($article['#items']);
-
-    return array(
-      '#theme' => 'article_list',
-      '#items' => $recent,
-      '#title' => 'Pet store friends',
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+    return new static(
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
+      $container->get('remote_articles_client')
     );
+  }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function build() {
+    $remote_articles = $this->remoteArticlesClient->random();
+    $items = [];
+
+    foreach ($remote_articles as $remote_article) {
+      $items[] = $remote_article;
+    }
+
+    return [
+      '#theme' => 'article_list',
+      '#items' => $items,
+      '#title' => 'Pet Store Friends'
+    ];
   }
 
 }
