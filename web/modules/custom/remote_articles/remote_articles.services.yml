@@ -1,0 +1,5 @@
+services:
+  remote_articles_client:
+    class: Drupal\remote_articles\RemoteArticlesClient
+    arguments:
+      - '@http_client_factory'

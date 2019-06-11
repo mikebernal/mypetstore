@@ -1,0 +1,21 @@
+// Nav
+// -------------------------------------------------------
+
+// Nav main
+//
+// Defines the main nav style.
+//
+// Style guide: Components.nav-main
+//
+// Markup:
+//  <div id="region-primary-menu">
+//    <ul class="menu">
+//      <li><a href="#">Home</a></li>
+//      <li><a href="#">About</a></li>
+//      <li><a href="#">Contact</a></li>
+//    </ul>
+//  <div>
+.region-primary-menu,
+.region-secondary-menu {
+  float: right;
+}

@@ -1,0 +1,25 @@
+// Form styles
+// -------------------------------------------------------
+
+// Form
+//
+// Base form element normalisation and styles. See `duk-form-normalize()`
+//
+// Style guide: Form.form
+//
+// Markup:
+//  <form>
+//    <div class="form-item"><label>Text field</label><input type="text" /></div>
+//    <div class="form-item"><label>Select</label><select><option>foo</option><optgroup label="Group"><option>bar</option><option>foobar</option></optgroup></select></div>
+//    <div class="form-item"><label>Multi Select</label><select multiple><option>foo</option><optgroup label="Group"><option>bar</option><option>foobar</option></optgroup></select></div>
+//    <div class="form-item"><label>Search field</label><input type="search" /></div>
+//    <div class="form-item"><label>Number field</label><input type="number" /></div>
+//    <div class="form-item"><label>Password field</label><input type="password" /></div>
+//    <div class="form-item"><label>Email field (disabled)</label><input disabled type="email" /></div>
+//    <div class="form-item"><label>Textarea</label><textarea></textarea></div>
+//    <p class="form-item"><input type="submit" class="button--primary value="Submit" /><button class="button--tertiary">Reset</button></p>
+//  </form>
+form {
+
+}
+

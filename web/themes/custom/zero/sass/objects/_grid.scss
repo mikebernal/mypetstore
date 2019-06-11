@@ -1,0 +1,26 @@
+// Grids
+// -------------------------------------------------------
+
+// Grid
+//
+// Create a grid (columns) from nested elements. You should define your own `$duk-base-responsive-grids` to change these.
+//
+// .duk-grid--2-col - 2 column grid
+// .duk-grid--3-col - 3 column grid
+// .duk-grid--4-col - 4 column grid
+// .duk-grid--5-col - 5 column grid
+//
+// Style guide: Layout.grid
+//
+// Markup:
+// <div class="">
+//   <div><div class="duk-island--tertiary">Grid Item</div></div>
+//   <div><div class="duk-island--tertiary">Grid Item</div></div>
+//   <div><div class="duk-island--tertiary">Grid Item</div></div>
+//   <div><div class="duk-island--tertiary">Grid Item</div></div>
+//   <div><div class="duk-island--tertiary">Grid Item</div></div>
+//   <div><div class="duk-island--tertiary">Grid Item</div></div>
+// </div>
+.duk-grid {
+
+}
