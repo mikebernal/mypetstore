@@ -1,15 +1,17 @@
-{% if items|length == 10 %}
-<h1>{{ title }}</h1>
-    {% for article in items %}
-        <div class="container friends-pet-blog-list">
-            <h2 class="friends-pet-blog-list__title">{{ article.title }}</h2>
-            <p class="friends-pet-blog-list__body">{{ article.body }}</p>
-            <hr>
-        </div>
-    {% endfor %}
+{# Array structure: items[n] ['id', 'uid', 'title', 'body'] #}
+{% set len = (items|length - 1) %}
+{% if title == "Pet Store Friend Block" %}
+  {# {{ block("Latest article", "article_block.twig") }} #}
+  <div>
+    <h3>{{ items[len]['title'] }}</h3>
+    <p>{{ items[len]['body'] }}</p>
+  </div>
 {% else %}
-<div class="pet-store-friends--panel--offset">
-    <h2 class="pet-store-friends--panel--offset__title">{{items['title']}}</h2>
-    <p class="pet-store-friends--panel--offset__body">{{items['body']}}</p>
-</div>
+  <h1> {{ title }} </h1>
+  {% for item in items|reverse|slice(0, 5) %}
+    <h3> {{ item.title }} </h3>
+    <p> {{ item.body }} </p>
+    <hr>
+  {% endfor %}
+  <a href="http://www.google.com">Friends Website</a>
 {% endif %}

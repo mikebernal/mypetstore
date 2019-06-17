@@ -1,6 +1,6 @@
-name: pet_store_friend
-description: 'Fetch latest articles from my friends blog'
-type: module
+name: Pet Store Friend
 core: 8.x
+type: module
+description: Fetch remote articles 
 dependencies:
   - block

@@ -1,35 +1,35 @@
 <?php
 
-  namespace Drupal\pet_store_friend\Controller;
+namespace Drupal\pet_store_friend\Controller;
 
-  class ArticleController {
- 
-    private $url;
-    private $json;
-    private $data;
-    private $len;
-    private $articles;
+use Drupal\pet_store_friend\Services\RemoteArticles;
+use Drupal\Core\Controller\ControllerBase;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+/**
+ * ArticleController
+ */
+class ArticleController extends ControllerBase 
+{
+  private $articles;
 
-    public function __construct() {
-      
-      $this->url      = 'https://jsonplaceholder.typicode.com/posts';
-      $this->json     = file_get_contents($this->url);
-      $this->data     = json_decode($this->json, TRUE);
-      $this->len      = count($this->data);
-      $this->articles = array_slice($this->data, ($this->len - 10), $this->len);
-
-    }
-
-    public function getArticles() {
-
-      arsort($this->articles);
-
-      return array(
-        '#theme' => 'article_list',
-        '#items' => $this->articles,
-        '#title' => 'Friends pet blog'
-      );
-
-    }
-
+  public function __construct(RemoteArticles $articles) 
+  {
+    $this->articles = $articles;
   }
+
+  public static function create(ContainerInterface $container) 
+  {
+    $articles = $container->get('pet_store_friend.fetch_articles');
+    return new static($articles);
+  }
+
+  public function renderArray() 
+  {
+    return [
+      '#theme' => 'article_list',
+      '#items' => $this->articles->getArticles(),
+      '#title' => 'Friends pet blog',
+    ];
+  }
+
+}

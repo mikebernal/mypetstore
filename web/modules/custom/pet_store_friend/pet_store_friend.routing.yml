@@ -1,7 +1,7 @@
 pet_store_friend.article_list:
   path: '/friends-articles'
   defaults:
-    _controller: '\Drupal\pet_store_friend\Controller\ArticleController::getArticles'
-    _title: 'Friends pet blog'
+    _controller: Drupal\pet_store_friend\Controller\ArticleController::renderArray
+    _title: 'Friends Pet Blog'
   requirements:
     _permission: 'access content'
