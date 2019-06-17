@@ -30,6 +30,5 @@
 #// npm front
 /node_modules
 /web/themes/custom/zero/css
-// Removed for easier checking of pr
-package-lock.json
-composer.lock
+/web/themes/custom/custombulma
+

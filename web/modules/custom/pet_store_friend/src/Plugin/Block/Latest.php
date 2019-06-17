@@ -4,7 +4,9 @@ namespace Drupal\pet_store_friend\Plugin\Block;
 
 use Drupal\pet_store_friend\Services\RemoteArticles;
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+
 /**
  * Fetch latest article from friends website.
  *
@@ -14,18 +16,27 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   category = @Translation("Pet store friend"),
  * )
  */
-class Latest extends BlockBase 
+class Latest extends BlockBase implements ContainerFactoryPluginInterface 
 {
   private $article;
-  public function __construct(RemoteArticles $article) 
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, RemoteArticles $article) 
   {
+    parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->article = $article;
   }
 
-  public function create(ContainerInterface $container) 
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) 
   {
-    $article = $container->get('pet_store_friend.fetch_articles');
-    return new static($article);
+    // $article = $container->get('pet_store_friend.fetch_articles');
+    // return new static($article);
+
+    return new static(
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
+      $container->get('pet_store_friend.fetch_articles')
+    );
+
   }
   /**
    * {@inheritdoc}
