@@ -1,8 +1,8 @@
 {
   "name": "mypetstore",
   "version": "1.0.0",
-  "description": "<h1>Base theme: Classy</h1>\r <h1>Drupal modules:</h1>\r <ul>\r     <li>webform</li>\r     <li>page_manager</li>\r     <li>displaysuite</li>\r     <li>pathauto</li>\r </ul>\r <h2>Finished task</h2>\r <ul>\r     <li>Set up sass/css directories</li>\r     <li>Created content types</li>\r     <li>Implements classy theme</li>\r </ul>\r <h2>Data structure</h2>",
-  "main": "web/themes/custom/zero/js/app.js",
+  "description": "<h1>Base theme: Omega</h1>\r <h1>Drupal modules:</h1>\r <ul>\r     <li>webform</li>\r     <li>page_manager</li>\r     <li>displaysuite</li>\r     <li>pathauto</li>\r </ul>\r <h2>Finished task</h2>\r <ul>\r     <li>Set up sass/css directories</li>\r     <li>Created content types</li>\r     <li>Implements classy theme</li>\r </ul>\r <h2>Data structure</h2>",
+  "main": "web/themes/custom/omegasubtheme/js/omegasubtheme.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

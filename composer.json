@@ -36,6 +36,7 @@
         "drupal/ds": "^3.3",
         "drupal/fences": "^2.0@alpha",
         "drupal/module_missing_message_fixer": "^1.0",
+        "drupal/omega": "^5.0@alpha",
         "drupal/page_manager": "^4.0@beta",
         "drupal/pathauto": "^1.4",
         "drupal/rate": "^1.0",

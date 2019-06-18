@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "931a44d670c362cfb4dbd675b500f105",
+    "content-hash": "af69083a217ffb89fef28195db374984",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3370,6 +3370,65 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/module_missing_message_fixer",
                 "issues": "https://www.drupal.org/project/issues/module_missing_message_fixer"
+            }
+        },
+        {
+            "name": "drupal/omega",
+            "version": "5.0.0-alpha7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/omega.git",
+                "reference": "8.x-5.0-alpha7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/omega-8.x-5.0-alpha7.zip",
+                "reference": "8.x-5.0-alpha7",
+                "shasum": "cf543fd25f2780320795fd2531e30a14cf298467"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-5.x": "5.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-5.0-alpha7",
+                    "datestamp": "1469485439",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "fubhy",
+                    "homepage": "https://www.drupal.org/user/761344"
+                },
+                {
+                    "name": "himerus",
+                    "homepage": "https://www.drupal.org/user/159141"
+                },
+                {
+                    "name": "miche",
+                    "homepage": "https://www.drupal.org/user/181494"
+                },
+                {
+                    "name": "splatio",
+                    "homepage": "https://www.drupal.org/user/1012210"
+                }
+            ],
+            "description": "A flexible theme with tons of configurable regions and a responsive, mobile-first layout.",
+            "homepage": "https://www.drupal.org/project/omega",
+            "support": {
+                "source": "https://git.drupalcode.org/project/omega"
             }
         },
         {
@@ -9720,6 +9779,7 @@
         "drupal/better_exposed_filters": 15,
         "drupal/contact_storage": 10,
         "drupal/fences": 15,
+        "drupal/omega": 15,
         "drupal/page_manager": 10
     },
     "prefer-stable": true,
