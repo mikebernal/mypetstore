@@ -29,6 +29,6 @@
 
 #// npm front
 /node_modules
-/web/themes/custom/zero/css
+/web/themes/custom/zero
 /web/themes/custom/custombulma
-
+/web/themes/custom/omegasubtheme/style/css

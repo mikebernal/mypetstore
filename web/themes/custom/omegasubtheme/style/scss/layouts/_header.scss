@@ -1,0 +1,32 @@
+// Header
+// -------------------------------------------------------
+
+// Header
+//
+// Defines the header style.
+//
+// Style guide: Layouts.header
+//
+// Markup:
+//  <div id="header">
+//    <div class="block-system-branding">
+//      <img src="http://placekitten.com/g/300/300">
+//    </div>
+//  <div>
+.site-header {
+  @extend %duk-island--primary;
+
+  .container {
+    @extend %duk-container--x-large;
+    @extend %duk-island;
+    @extend %duk-clearfix;
+  }
+}
+
+.block-system-branding-block {
+  float: left;
+
+  img {
+    width: 5em;
+  }
+}
