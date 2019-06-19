@@ -1,3 +1,5 @@
 services:
   pet_store_friend.fetch_articles:
     class: Drupal\pet_store_friend\Services\RemoteArticles
+    arguments:
+      - '@http_client_factory'

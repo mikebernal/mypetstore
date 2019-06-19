@@ -2,13 +2,12 @@
 
 namespace Drupal\pet_store_friend\Plugin\Block;
 
-use Drupal\pet_store_friend\Services\RemoteArticles;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Fetch latest article from friends website.
+ * Fetch latest article from friends website and display to block.
  *
  * @Block(
  *   id = "latest_article",
@@ -18,18 +17,37 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 class Latest extends BlockBase implements ContainerFactoryPluginInterface 
 {
-  private $article;
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, RemoteArticles $article) 
+  /**
+   *
+   * @var \Drupal\pet_store_friend\Services\RemoteArticles
+   */
+  protected $article;
+ /**
+  * Latest constructor
+  *
+  * @param array $configuration
+  * @param string $plugin_id
+  * @param mixed $plugin_definition
+  * @param RemoteArticles $article
+  */
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, $article) 
   {
+    /**
+     * @{@inheritdoc}
+     */
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->article = $article;
   }
 
+  /**
+   * {@inheritdoc}
+   */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) 
   {
-    // $article = $container->get('pet_store_friend.fetch_articles');
-    // return new static($article);
 
+  /**
+   * {@inheritdoc}
+   */
     return new static(
       $configuration,
       $plugin_id,
@@ -45,7 +63,7 @@ class Latest extends BlockBase implements ContainerFactoryPluginInterface
   {
     return [
       '#theme' => 'article_list',
-      '#items' => $this->article->getArticles(),
+      '#items' => $this->article->getLatest(),
       '#title' => 'Pet Store Friend Block',
     ];
   }

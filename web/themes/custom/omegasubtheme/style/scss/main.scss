@@ -22,6 +22,10 @@ $duk-include-styles: true;
 // Import duk and base styles.
 @import "./node_modules/@doghouse/uikit/scss/duk";
 
+// My custom SASS files
+@import"variables";
+
+
 // All other custom SCSS included via globs.
 // -------------------------------------------------------
 
@@ -30,7 +34,3 @@ $duk-include-styles: true;
 @import "base/**/*";
 @import "layouts/**/*";
 @import "components/**/*";
-
-body {
-  background: red;
-}

@@ -1,10 +1,9 @@
 {# Array structure: items[n] ['id', 'uid', 'title', 'body'] #}
-{% set len = (items|length - 1) %}
 {% if title == "Pet Store Friend Block" %}
   {# {{ block("Latest article", "article_block.twig") }} #}
   <div>
-    <h3>{{ items[len]['title'] }}</h3>
-    <p>{{ items[len]['body'] }}</p>
+    <h3>{{ items['title'] }}</h3>
+    <p>{{ items['body'] }}</p>
   </div>
 {% else %}
   <h1> {{ title }} </h1>

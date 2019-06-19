@@ -22,5 +22,8 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', gulp.parallel( 'browserSync', 'sass', function() {
-    gulp.watch('web/themes/custom/omegasubtheme/style/scss/**/*.scss', gulp.parallel('sass'));
+    gulp.watch([
+        'web/themes/custom/omegasubtheme/style/scss/**/*.scss',
+        'web/themes/custom/omegasubtheme/templates/**/*.twig',
+    ], gulp.parallel('sass'));
 }));
