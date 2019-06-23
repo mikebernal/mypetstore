@@ -1,5 +1,30 @@
-// Menus
-.menu--main,
-.menu--footer {
-  // @include duk-nav--horizontal;
+.menu--main {
+  
+  .menu {
+    
+    @extend %duk-nav--horizontal;
+    background: red;
+
+    @media screen and (max-width: 480px) {
+
+      @include duk-nav--vertical;
+     
+      li {
+        text-align: center;
+      }
+  
+      a {
+        text-decoration: none;
+      }
+  
+    }
+
+  }
+
+  @media screen and (max-width: 480px) {
+
+    display: none;
+    
+  }
+
 }

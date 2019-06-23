@@ -30,13 +30,7 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      {%
-        set nav = [
-          'menu',
-          'duk-nav--horizontal',
-        ]
-      %}
-      <ul{{ attributes.addClass(nav) }}>
+      <ul{{ attributes.addClass('menu') }}>
     {% else %}
       <ul class="menu">
     {% endif %}
