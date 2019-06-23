@@ -1,7 +1,9 @@
 #page-wrapper {
   @extend %duk-container--x-large;
+  text-align: center;
   
   @media screen and (max-width: 480px) {
     background: red;
+    
   }
 }
