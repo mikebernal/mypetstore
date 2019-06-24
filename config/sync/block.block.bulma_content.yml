@@ -1,0 +1,22 @@
+uuid: 862f114f-284b-44c6-ada6-99f80f820892
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bulma
+_core:
+  default_config_hash: ZdQFxp_aNkFGWiHwnq1dL4zlpO3nJayqrgx9F7q_F5c
+id: bulma_content
+theme: bulma
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

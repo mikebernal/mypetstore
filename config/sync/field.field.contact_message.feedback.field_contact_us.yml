@@ -1,0 +1,25 @@
+uuid: 2a4148c3-f663-467e-953b-fb3f625a5db4
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_contact_us
+  module:
+    - webform
+id: contact_message.feedback.field_contact_us
+field_name: field_contact_us
+entity_type: contact_message
+bundle: feedback
+label: 'Contact us'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

@@ -1,0 +1,8 @@
+uuid: c454a668-9cf0-4907-9d11-d30efc2840be
+langcode: en
+status: true
+dependencies: {  }
+id: store_details
+label: 'Store details'
+revision: 0
+description: ''

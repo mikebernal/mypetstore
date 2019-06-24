@@ -1,0 +1,61 @@
+uuid: 6cccfef1-1dbf-4536-813c-f9dfd8da071d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.animals.body
+    - field.field.node.animals.field_care_instructions
+    - field.field.node.animals.field_image
+    - field.field.node.animals.field_rating
+    - field.field.node.animals.field_this_is_great_for_people_w
+    - field.field.node.animals.field_type
+    - node.type.animals
+  module:
+    - ds
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_image
+        - node_title
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.animals.teaser
+targetEntityType: node
+bundle: animals
+mode: teaser
+content:
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_care_instructions: true
+  field_rating: true
+  field_this_is_great_for_people_w: true
+  field_type: true

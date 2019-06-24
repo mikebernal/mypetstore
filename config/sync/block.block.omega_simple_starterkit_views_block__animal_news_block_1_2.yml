@@ -1,0 +1,30 @@
+uuid: 39377a47-799a-41bf-aafb-9b53eba9ab01
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.animal_news
+  module:
+    - system
+    - views
+  theme:
+    - omega_simple_starterkit
+id: omega_simple_starterkit_views_block__animal_news_block_1_2
+theme: omega_simple_starterkit
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:animal_news-block_1'
+settings:
+  id: 'views_block:animal_news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '3'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

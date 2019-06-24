@@ -1,0 +1,30 @@
+uuid: dc1caaff-039a-4358-8e1c-3c4b1c332db1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.browse_animals
+  module:
+    - system
+    - views
+  theme:
+    - zero
+id: views_block__browse_animals_machine_1
+theme: zero
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:browse_animals-machine_1'
+settings:
+  id: 'views_block:browse_animals-machine_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '3'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: 2f2e3a8e-2d47-4658-8a1c-9221ec28302c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - omega_simple_starterkit
+_core:
+  default_config_hash: ZdQFxp_aNkFGWiHwnq1dL4zlpO3nJayqrgx9F7q_F5c
+id: omega_simple_starterkit_content
+theme: omega_simple_starterkit
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

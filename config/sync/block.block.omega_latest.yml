@@ -1,0 +1,26 @@
+uuid: a3635715-3d59-4fbd-9780-555d36543ff7
+langcode: en
+status: true
+dependencies:
+  module:
+    - pet_store_friend
+    - system
+  theme:
+    - omega
+id: omega_latest
+theme: omega
+region: content
+weight: 0
+provider: null
+plugin: latest_article
+settings:
+  id: latest_article
+  label: Latest
+  provider: pet_store_friend
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

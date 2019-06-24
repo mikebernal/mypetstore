@@ -1,0 +1,23 @@
+uuid: 3a1bbc7c-47ac-43dd-8d43-85be0ebcc306
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - custombulma
+id: sitebranding_3
+theme: custombulma
+region: footer
+weight: -9
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 8df1e5c8-722a-4da5-9e95-d5b4a7b0733a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.animals
+  module:
+    - vud
+id: node.animals.field_rating
+field_name: field_rating
+entity_type: node
+bundle: animals
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: vote_up_down_field

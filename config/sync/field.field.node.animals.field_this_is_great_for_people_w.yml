@@ -1,0 +1,22 @@
+uuid: 6aaba63d-abf9-4523-af5e-704898685095
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_this_is_great_for_people_w
+    - node.type.animals
+  module:
+    - text
+id: node.animals.field_this_is_great_for_people_w
+field_name: field_this_is_great_for_people_w
+entity_type: node
+bundle: animals
+label: 'This is great for people who'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

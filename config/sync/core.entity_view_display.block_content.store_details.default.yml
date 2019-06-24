@@ -1,0 +1,95 @@
+uuid: ae5a2d8b-976c-4d10-a0f2-f65c95a0015c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.store_details
+    - field.field.block_content.store_details.body
+    - field.field.block_content.store_details.field_fax
+    - field.field.block_content.store_details.field_image
+    - field.field.block_content.store_details.field_phone
+    - field.field.block_content.store_details.field_s
+    - field.field.block_content.store_details.field_social_media_1
+  module:
+    - ds
+    - image
+    - link
+    - telephone
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_image
+        - body
+        - field_phone
+        - field_fax
+        - field_social_media_1
+        - field_s
+id: block_content.store_details.default
+targetEntityType: block_content
+bundle: store_details
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fax:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_phone:
+    weight: 2
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_s:
+    type: link
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_social_media_1:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

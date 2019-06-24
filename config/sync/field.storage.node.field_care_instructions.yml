@@ -1,0 +1,19 @@
+uuid: 8aa4a111-4c2a-4b49-b987-7def560cb79d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_care_instructions
+field_name: field_care_instructions
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

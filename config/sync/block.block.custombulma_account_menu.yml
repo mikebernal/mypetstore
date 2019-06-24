@@ -1,0 +1,27 @@
+uuid: 1e882320-7840-46b3-85bc-54c2f839a47c
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - custombulma
+_core:
+  default_config_hash: ivRfdXcG0y7oqxOSNtZVZoHjqp4UiRzqxBkeWu-td7w
+id: custombulma_account_menu
+theme: custombulma
+region: header
+weight: -2
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '1'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

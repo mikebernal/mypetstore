@@ -1,0 +1,27 @@
+uuid: 66babada-fde8-47a6-81ae-f047972ef63f
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - omega_starterkit
+_core:
+  default_config_hash: ivRfdXcG0y7oqxOSNtZVZoHjqp4UiRzqxBkeWu-td7w
+id: omega_starterkit_account_menu
+theme: omega_starterkit
+region: header
+weight: -2
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '1'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

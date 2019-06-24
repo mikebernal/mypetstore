@@ -1,0 +1,38 @@
+uuid: 1cdce662-b885-4241-aca1-f1bb93ab4bab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pet_store_friends_panel
+    - field.storage.block_content.field_image
+  module:
+    - image
+id: block_content.pet_store_friends_panel.field_image
+field_name: field_image
+entity_type: block_content
+bundle: pet_store_friends_panel
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/blog
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

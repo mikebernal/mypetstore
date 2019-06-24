@@ -1,0 +1,22 @@
+uuid: 4f5c38fd-a2b4-4657-a1f2-b6f848cb8c64
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pet_store_friends_panel
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.pet_store_friends_panel.body
+field_name: body
+entity_type: block_content
+bundle: pet_store_friends_panel
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
