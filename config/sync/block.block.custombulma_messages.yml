@@ -1,0 +1,22 @@
+uuid: 91e1db2e-86b0-4f94-8bb1-e51f467048f1
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - custombulma
+_core:
+  default_config_hash: Ron5OcY_0EyL7s5mDBUiLG_9LEvcC8KIPNmv6M5uAgE
+id: custombulma_messages
+theme: custombulma
+region: header
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

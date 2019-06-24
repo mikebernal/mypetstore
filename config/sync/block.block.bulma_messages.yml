@@ -1,0 +1,22 @@
+uuid: 4ad4be3a-bd80-4c88-9d63-c65d9c99c319
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bulma
+_core:
+  default_config_hash: Ron5OcY_0EyL7s5mDBUiLG_9LEvcC8KIPNmv6M5uAgE
+id: bulma_messages
+theme: bulma
+region: help
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

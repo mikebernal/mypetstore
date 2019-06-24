@@ -1,0 +1,25 @@
+uuid: b0f60d69-4129-40d8-84cc-847324f400ea
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:blurb:3192fa53-c0f4-40ba-a0f5-178e5d48e892'
+  module:
+    - block_content
+  theme:
+    - zero
+id: footerblurb
+theme: zero
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:3192fa53-c0f4-40ba-a0f5-178e5d48e892'
+settings:
+  id: 'block_content:3192fa53-c0f4-40ba-a0f5-178e5d48e892'
+  label: 'Footer blurb'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

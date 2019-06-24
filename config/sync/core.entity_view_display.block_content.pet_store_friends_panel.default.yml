@@ -1,0 +1,90 @@
+uuid: 07608bca-f85f-48d7-ac2a-9929e3ee54cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pet_store_friends_panel
+    - field.field.block_content.pet_store_friends_panel.body
+    - field.field.block_content.pet_store_friends_panel.field_heading
+    - field.field.block_content.pet_store_friends_panel.field_image
+    - field.field.block_content.pet_store_friends_panel.field_read_more
+    - field.field.block_content.pet_store_friends_panel.field_subheading
+  module:
+    - ds
+    - image
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_fluid
+      library: ds/ds_2col_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_image
+        - body
+      right:
+        - field_heading
+        - field_subheading
+        - field_test
+        - field_read_more
+id: block_content.pet_store_friends_panel.default
+targetEntityType: block_content
+bundle: pet_store_friends_panel
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: left
+  field_heading:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: right
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: left
+  field_read_more:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: right
+  field_subheading:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: right
+hidden: {  }

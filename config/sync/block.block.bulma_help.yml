@@ -1,0 +1,22 @@
+uuid: 1fac17e5-0f64-4cd6-9572-b944a61ccfec
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bulma
+_core:
+  default_config_hash: FJJ2r0bw42DqHL5Q2FufIbCe31Z-THwXZURQ-M0i87s
+id: bulma_help
+theme: bulma
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

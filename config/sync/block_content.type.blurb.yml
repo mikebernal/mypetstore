@@ -1,0 +1,8 @@
+uuid: e5f7f38e-9281-4204-9d75-3e06405eb5c3
+langcode: en
+status: true
+dependencies: {  }
+id: blurb
+label: Blurb
+revision: 0
+description: ''

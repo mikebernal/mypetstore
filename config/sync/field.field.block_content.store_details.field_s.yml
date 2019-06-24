@@ -1,0 +1,23 @@
+uuid: 625199c6-9568-4112-ac7b-4baadf800b50
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.store_details
+    - field.storage.block_content.field_s
+  module:
+    - link
+id: block_content.store_details.field_s
+field_name: field_s
+entity_type: block_content
+bundle: store_details
+label: 'Social media 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,42 @@
+uuid: d4b02a55-9ee8-48a2-a4a5-1138c5fda786
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.toggle_menu
+    - field.field.block_content.toggle_menu.body
+  module:
+    - ds
+    - fences
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - body
+id: block_content.toggle_menu.default
+targetEntityType: block_content
+bundle: toggle_menu
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_item_tag: i
+        fences_field_item_classes: duk-icon-bars
+        fences_label_tag: none
+        fences_label_classes: ''
+    region: content
+hidden: {  }

@@ -1,0 +1,31 @@
+uuid: 8199cd3d-31c4-40e7-81f3-bbbcd1593dc0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:store_details:6e235ee5-6d63-48cd-b641-c4ba1b8e836c'
+  module:
+    - block_content
+    - system
+  theme:
+    - omega_starterkit
+id: omega_starterkit_contactus_2
+theme: omega_starterkit
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:6e235ee5-6d63-48cd-b641-c4ba1b8e836c'
+settings:
+  id: 'block_content:6e235ee5-6d63-48cd-b641-c4ba1b8e836c'
+  label: 'Contact Us'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact-us
+    negate: false
+    context_mapping: {  }

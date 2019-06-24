@@ -1,0 +1,8 @@
+uuid: fbeeba1c-85f6-40d6-a3de-722680fc3e31
+langcode: en
+status: true
+dependencies: {  }
+id: pet_store_friends_panel
+label: 'Pet store friends '
+revision: 0
+description: ''
