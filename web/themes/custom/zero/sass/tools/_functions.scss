@@ -1,0 +1,14 @@
+// Functions
+// -------------------------------------------------------
+
+// my-theme-function
+//
+// Example of a function with args in KSS syntax. Delete me.
+//
+// $val - First argument
+// $thing - Another arg (defaults to `foo`)
+//
+// Style guide: Functions.my-theme-function
+@function my-theme-function($val, $thing: 'foo') {
+  @return 'bar'
+}

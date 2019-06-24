@@ -1,0 +1,22 @@
+uuid: 84d991e5-aaff-4e26-b802-2a709ec56f30
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.animals
+id: node.animals.promote
+field_name: promote
+entity_type: node
+bundle: animals
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

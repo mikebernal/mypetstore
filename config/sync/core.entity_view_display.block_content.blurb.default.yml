@@ -1,0 +1,22 @@
+uuid: f27c9c73-0aee-4bad-87d8-881fd4c27c4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blurb
+    - field.field.block_content.blurb.body
+  module:
+    - text
+id: block_content.blurb.default
+targetEntityType: block_content
+bundle: blurb
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

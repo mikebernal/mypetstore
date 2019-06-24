@@ -1,0 +1,7 @@
+#page-wrapper {
+  @extend %duk-container--x-large;
+  
+  @media screen and (max-width: 480px) {
+    background: red;
+  }
+}

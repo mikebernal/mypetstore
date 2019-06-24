@@ -1,0 +1,22 @@
+uuid: 725ce589-d1be-4caf-a545-c4b6f0c94c87
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - custombulma
+_core:
+  default_config_hash: ZdQFxp_aNkFGWiHwnq1dL4zlpO3nJayqrgx9F7q_F5c
+id: custombulma_content
+theme: custombulma
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

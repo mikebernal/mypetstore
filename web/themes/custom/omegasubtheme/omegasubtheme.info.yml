@@ -1,0 +1,33 @@
+name: omegasubtheme
+type: theme
+core: 8.x
+description: 'A sub theme of omega'
+package: Core
+'base theme': omega
+force_export: false
+inherit_layout: false
+scss_support: true
+libraries:
+  - omegasubtheme/omegasubtheme
+regions:
+  header: Header
+  page_top: 'Page Top'
+  highlighted: Highlighted
+  content: Content
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer: Footer
+  page_bottom: 'Page Bottom'
+features:
+  logo: true
+  name: true
+  slogan: true
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  main_menu: true
+  secondary_menu: true
+version: 8.x
+project: omega
+datestamp: 1469485442

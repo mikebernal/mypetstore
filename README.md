@@ -1,59 +1,38 @@
-<h1>Base theme: Classy</h1>
-<h1>Drupal modules:</h1>
-<ul>
-    <li>webform</li>
-    <li>page_manager</li>
-    <li>displaysuite</li>
-    <li>pathauto</li>
-</ul>
-<h2>Finished task</h2>
-<ul>
-    <li>Set up sass/css directories</li>
-    <li>Created content types</li>
-    <li>Implements classy theme</li>
-</ul>
-<h2>Data structure</h2>
+## Base theme: Classy
+## Drupal modules:
 
-<h3>Animals</h3>
-<ul>
-    <li>title(default)</li>
-    <li>image</li>
-    <li>type</li>
-    <li>body(default)</li>
-    <li>care instructions</li>
-    <li>this pet is great for people who</li>
-</ul>
-<h3>News</h3>
-<ul>
-    <li>title(default)</li>
-    <li>image</li>
-    <li>posted_at</li>
-    <li>body(default)</li>
-</ul>
-<h3>Hero</h3>
-<ul>
-    <li>title(default)</li>
-    <li>CTA</li>
-    <li>image</li>
-    <li>body(default)</li>
-</ul>
-<h3>Contact</h3>
-<ul>
-    <li>image</li>
-    <li>address</li>
-    <li>phone</li>
-    <li>fax</li>
-    <li>social media 1</li>
-    <li>social media 2</li>
-</ul>
-<h3>To do</h3>
-<ul>
-    <li>Contact Page</li>
-    <li>Start creating views</li>
-    <li>Generate dummy data</li>
-    <li>Finish markup</li>
-    <li>Design site using sass</li>
-    <li>fetch remote articles</li>
-    <li></li>
-    <li></li>
-</ul>
+1.  webform
+2.  page_manager
+3.  displaysuite
+4.  pathauto
+5.  voting api
+6.  vote_up_down
+7.  better_exposed_filters
+8.  contact_storage
+9.  pet store friend
+10. responsive image
+11. devel
+12. admin toolbar
+13. telephone
+
+## Content types
+
+### Animals
+1. title(default)
+2. image
+3. type(list)
+4. body(default)
+5. care instructions
+6. this pet is great for people who
+
+#### News
+1. title(default)
+2. image
+3. posted_at
+4. body(default)
+
+## Custom module
+
+1. Pet store friends 
+   1. path '/friends-articles'
+   2. block 'latest'

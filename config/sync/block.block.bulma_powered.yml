@@ -1,0 +1,22 @@
+uuid: e7df9c9d-2560-4810-9097-e32ca12b8c9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bulma
+_core:
+  default_config_hash: e_Xh9DIa3ZyP3C0BZayzu0bpWKwWH3Uz0afzQXOGVx8
+id: bulma_powered
+theme: bulma
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

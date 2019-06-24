@@ -1,0 +1,14 @@
+#header-outer-wrapper {
+
+  .header-layout {
+    @extend %duk-island;
+  }
+}
+
+.block-system-branding-block {
+  float: left;
+
+  img {
+    width: 5em;
+  }
+}

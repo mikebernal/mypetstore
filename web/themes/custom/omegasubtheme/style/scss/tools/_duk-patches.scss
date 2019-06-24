@@ -1,0 +1,11 @@
+// Duk Patches
+//
+// This use this to store patches/fixes/additions to DUK which you port upstream at a later time.
+//
+// Eg.
+// If you found a bug with `duk-font-weight()`, you can correct it here and test throughout your site
+// then at a later time do a PR for the change without being blocked by some faulty code.
+//
+// Any new additions (mixins/functions/etc) should be name spaced `duk`
+// -------------------------------------------------------
+

@@ -1,0 +1,22 @@
+uuid: 4ec08123-e108-4305-ac44-23f6cccab831
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_panel
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.hero_panel.body
+field_name: body
+entity_type: block_content
+bundle: hero_panel
+label: Blurb
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

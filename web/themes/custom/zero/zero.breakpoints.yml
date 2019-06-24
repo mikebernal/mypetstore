@@ -1,0 +1,23 @@
+zero.mobile:
+  label: mobile
+  mediaQuery: '(max-width: 480px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+
+zero.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 481px) and (max-width: 850px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+      
+zero.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 851px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x

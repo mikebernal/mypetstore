@@ -1,0 +1,28 @@
+uuid: e1dbd77d-42aa-4f94-8dc9-e0b6a7182ddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_panel
+    - field.storage.block_content.field_cta
+  module:
+    - link
+id: block_content.hero_panel.field_cta
+field_name: field_cta
+entity_type: block_content
+bundle: hero_panel
+label: CTA
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://www.google.com/'
+    title: 'Buy now'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

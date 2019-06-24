@@ -1,0 +1,22 @@
+uuid: 7fb992d8-f7e0-4a77-896a-e5bd617e00aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.store_details
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.store_details.body
+field_name: body
+entity_type: block_content
+bundle: store_details
+label: Address
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

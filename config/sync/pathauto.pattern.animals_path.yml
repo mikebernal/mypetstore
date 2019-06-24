@@ -1,0 +1,22 @@
+uuid: 350e7463-f035-42e3-8dac-2c7c8b090ff0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: animals_path
+label: 'Animals Path'
+type: 'canonical_entities:node'
+pattern: 'animals/[node:title]'
+selection_criteria:
+  a0454213-bb5a-46e9-9f19-466034892bd0:
+    id: node_type
+    bundles:
+      animals: animals
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a0454213-bb5a-46e9-9f19-466034892bd0
+selection_logic: and
+weight: -5
+relationships: {  }

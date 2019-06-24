@@ -1,0 +1,22 @@
+uuid: e1f53e65-1add-4dee-ab65-aceae137ca7a
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - custombulma
+_core:
+  default_config_hash: FJJ2r0bw42DqHL5Q2FufIbCe31Z-THwXZURQ-M0i87s
+id: custombulma_help
+theme: custombulma
+region: header
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
