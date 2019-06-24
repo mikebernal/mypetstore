@@ -34,4 +34,6 @@
 /web/themes/custom/omegasubtheme/style/css
 
 #vscode settings
-.vscode
+/.vscode
+
+/web/sites/example.settings.local.php
