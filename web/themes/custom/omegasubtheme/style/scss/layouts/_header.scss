@@ -3,7 +3,6 @@
   @media screen and (max-width: 480px) {
 
     background: $happy-ballons;
-    // background: $happy-ballons;
 
     #block-omegasubtheme-sitebranding-2 {
       display: none;
@@ -14,7 +13,4 @@
     @extend %duk-island;
   }
 
-  #block-omegasubtheme-sitebranding-2 {
-
-  }
 }

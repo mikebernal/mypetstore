@@ -18,6 +18,6 @@ omegasubtheme:
       style/css/main.css: {preprocess: false}
   dependencies:
 #     - core/modernizr
-#     - core/jquery
-#     - core/drupal
-#     - core/drupalSettings
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
