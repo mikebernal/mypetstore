@@ -1,0 +1,26 @@
+uuid: ca2f440e-5a7b-4203-ad23-a5e7d5b8e7df
+langcode: en
+status: true
+dependencies:
+  module:
+    - pet_store_friend
+    - system
+  theme:
+    - custombulma
+id: latest
+theme: custombulma
+region: content
+weight: 0
+provider: null
+plugin: latest_article
+settings:
+  id: latest_article
+  label: Latest
+  provider: pet_store_friend
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,6 @@
+#content-outer-wrapper {
+
+  > #main-layout {
+    @extend %duk-island;
+  }
+}

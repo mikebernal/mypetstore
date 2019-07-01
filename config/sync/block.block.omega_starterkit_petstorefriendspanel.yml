@@ -1,0 +1,31 @@
+uuid: 27b3fe77-ce72-4524-b622-8e81b3da1be7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:pet_store_friends_panel:4b1b29e5-8403-4034-8a19-dd692bb07bd6'
+  module:
+    - block_content
+    - system
+  theme:
+    - omega_starterkit
+id: omega_starterkit_petstorefriendspanel
+theme: omega_starterkit
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:4b1b29e5-8403-4034-8a19-dd692bb07bd6'
+settings:
+  id: 'block_content:4b1b29e5-8403-4034-8a19-dd692bb07bd6'
+  label: 'Pet store friends '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

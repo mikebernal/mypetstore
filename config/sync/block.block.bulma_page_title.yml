@@ -1,0 +1,20 @@
+uuid: a38b36e4-bd4a-406d-9819-3d0143ff4d3d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bulma
+_core:
+  default_config_hash: vKDVSFwHMcXw-AbHhOcynvv3NSyQWNLZPS605mARwDw
+id: bulma_page_title
+theme: bulma
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

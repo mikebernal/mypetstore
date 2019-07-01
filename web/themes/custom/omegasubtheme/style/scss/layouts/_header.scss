@@ -1,0 +1,16 @@
+#header-outer-wrapper {
+  
+  @media screen and (max-width: 480px) {
+
+    background: $happy-ballons;
+
+    #block-omegasubtheme-sitebranding-2 {
+      display: none;
+    }
+
+  }
+  .header-layout {
+    @extend %duk-island;
+  }
+
+}

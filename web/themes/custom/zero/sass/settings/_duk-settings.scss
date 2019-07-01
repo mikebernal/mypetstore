@@ -1,0 +1,83 @@
+// Duk Overrides
+// See scss/_settings.scss for all values.
+// ---------------------------------------------------
+
+// Typography
+// ---------------------------------------------------
+
+// Font sizes.
+$duk-base-font-sizes: (
+  'h1':        (size: 2.8em, height: $duk-base-line-height),
+);
+
+// Font weights.
+$duk-base-font-weights: (
+  'regular':    400,
+);
+
+// Colors
+// ---------------------------------------------------
+
+// Base colors.
+// http://chir.ag/projects/name-that-color
+$duk-colors: map-merge((
+  'blue':       #007bff,
+), $duk-colors);
+
+// Palette.
+$duk-palette: (
+  'primary':    map-get($duk-colors, 'blue'),
+);
+
+// Font colors.
+$duk-font-colors: (
+  'link':       map-get($duk-colors, 'blue'),
+);
+
+// Button colors.
+$duk-button-colors: (
+  'primary':    map-get($duk-colors, 'blue'),
+);
+
+// Background colors.
+$duk-bg-colors: ();
+
+// Border colors.
+$duk-border-colors: ();
+
+// Elements
+// ---------------------------------------------------
+
+// Buttons.
+$duk-base-button-settings: (
+  'font-weight':    normal,
+);
+
+// Breakpoints
+// ---------------------------------------------------
+
+// Breakpoint 'states' that map to breakpoint keys.
+$duk-base-breakpoint-states: (
+  'desktop-menu':        x-large,
+);
+
+// Grids
+// ---------------------------------------------------
+
+// Responsive grids.
+$duk-base-responsive-grids: (
+  '4-col': (medium: 2, x-large: 4),
+);
+
+// Icons
+// ---------------------------------------------------
+
+// Duk icon font path.
+// Copy the duk fonts to this folder. TODO: avoid this.
+$duk-icon-font-path: "../../fonts/duk-icons";
+
+// Custom icons.
+@import "icon";
+$duk-icons: (
+  'custom': $custom-icon-mappings,
+);

@@ -1,0 +1,16 @@
+.duk-icon-bars, .duk-icon-close {
+
+  display: none;
+
+  @media screen and (max-width: 480px) {
+
+    display: block;
+    text-align: right;
+
+    p {
+      display: none;
+    }
+    
+  }
+
+}

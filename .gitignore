@@ -22,4 +22,22 @@
 
 # Ignore .env files as they are personal
 /.env
+<<<<<<< HEAD
 node_modules
+=======
+
+# Ignore sql file for creating tables manually
+/web/webform_submission.sql
+/web/webform.sql
+
+#// npm front
+/node_modules
+/web/themes/custom/zero
+/web/themes/custom/custombulma
+/web/themes/custom/omegasubtheme/style/css
+
+#vscode settings
+.vscode
+
+web/themes/custom/omegasubtheme/fonts/duk-icons
+>>>>>>> toggle_menu

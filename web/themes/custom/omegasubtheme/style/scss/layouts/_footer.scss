@@ -1,0 +1,8 @@
+#footer-outer-wrapper {
+  @extend %duk-island--tertiary;
+
+  > .footer-layout {
+    @extend %duk-island;
+  }
+  
+}

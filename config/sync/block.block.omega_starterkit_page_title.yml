@@ -1,0 +1,20 @@
+uuid: d6b6eeb6-9532-476b-9f4f-82dfb484921f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - omega_starterkit
+_core:
+  default_config_hash: vKDVSFwHMcXw-AbHhOcynvv3NSyQWNLZPS605mARwDw
+id: omega_starterkit_page_title
+theme: omega_starterkit
+region: header
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

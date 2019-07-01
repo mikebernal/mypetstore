@@ -1,0 +1,26 @@
+uuid: 760704cd-64fc-4b7b-8796-d8805787a802
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.toggle_menu
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.toggle_menu.body
+field_name: body
+entity_type: block_content
+bundle: toggle_menu
+label: Body
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    summary: ''
+    value: "<p>test</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

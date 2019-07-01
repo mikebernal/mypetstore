@@ -1,0 +1,25 @@
+uuid: 574588e2-24fb-4fd7-bb4b-e5733891afa4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:blurb:3192fa53-c0f4-40ba-a0f5-178e5d48e892'
+  module:
+    - block_content
+  theme:
+    - omegasubtheme
+id: omegasubtheme_footerblurb_2
+theme: omegasubtheme
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:3192fa53-c0f4-40ba-a0f5-178e5d48e892'
+settings:
+  id: 'block_content:3192fa53-c0f4-40ba-a0f5-178e5d48e892'
+  label: 'Footer blurb'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

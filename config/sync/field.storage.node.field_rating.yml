@@ -1,0 +1,20 @@
+uuid: 6ef7d782-4098-40ee-ba64-281fc2d97beb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - vud
+id: node.field_rating
+field_name: field_rating
+entity_type: node
+type: vote_up_down_field
+settings:
+  widget: thumbs
+module: vud
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: cecf2125-feb7-45a6-801c-fed22f8f3ec6
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform
+id: webform_submission.token
+label: Token
+targetEntityType: webform_submission
+cache: true

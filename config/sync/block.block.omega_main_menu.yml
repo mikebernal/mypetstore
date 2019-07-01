@@ -1,0 +1,27 @@
+uuid: 0c52d072-27ad-4f43-9951-a93992a06654
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - omega
+_core:
+  default_config_hash: q9K0LS21F7XLuNT68ck1R3U5if0oqI0ZyyIVhfCXdN8
+id: omega_main_menu
+theme: omega
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 1aff28a4-8b61-46e8-8ce4-fa12f2d9bef5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_this_is_great_for_people_w
+field_name: field_this_is_great_for_people_w
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

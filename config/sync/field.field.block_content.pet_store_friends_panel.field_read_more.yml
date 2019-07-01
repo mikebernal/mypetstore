@@ -1,0 +1,23 @@
+uuid: 8467dbf5-469e-4041-b519-ca581b371d55
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.pet_store_friends_panel
+    - field.storage.block_content.field_read_more
+  module:
+    - link
+id: block_content.pet_store_friends_panel.field_read_more
+field_name: field_read_more
+entity_type: block_content
+bundle: pet_store_friends_panel
+label: 'Read more'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

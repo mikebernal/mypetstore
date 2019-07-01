@@ -1,0 +1,22 @@
+uuid: 3b94e23a-2d96-4dab-8214-3c26f5c2be99
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - omega
+_core:
+  default_config_hash: FJJ2r0bw42DqHL5Q2FufIbCe31Z-THwXZURQ-M0i87s
+id: omega_help
+theme: omega
+region: header
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

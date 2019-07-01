@@ -1,0 +1,22 @@
+uuid: 8d6b203c-ef19-4ebb-a0f4-a3539f7dc263
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - omega_simple_starterkit
+_core:
+  default_config_hash: FJJ2r0bw42DqHL5Q2FufIbCe31Z-THwXZURQ-M0i87s
+id: omega_simple_starterkit_help
+theme: omega_simple_starterkit
+region: header
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 1505f3fb-e643-4197-ab4a-655727fd115a
+langcode: en
+status: true
+dependencies: {  }
+id: hero_panel
+label: 'Hero Panel'
+revision: 0
+description: ''

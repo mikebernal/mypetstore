@@ -1,0 +1,26 @@
+uuid: 353eb468-6be4-47f0-9ab9-3ea747bb945c
+langcode: en
+status: true
+dependencies:
+  module:
+    - pet_store_friend
+    - system
+  theme:
+    - omega_starterkit
+id: omega_starterkit_latest
+theme: omega_starterkit
+region: content
+weight: 0
+provider: null
+plugin: latest_article
+settings:
+  id: latest_article
+  label: Latest
+  provider: pet_store_friend
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
