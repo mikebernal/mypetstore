@@ -1,18 +1,19 @@
 # Drupal 8 Custom module 101
 
-<p>During my internship at Doghouse Agency Perth, Me and my fellow interns instructed to created a Drupal 8 fictitious website for a Pet Site to improve our skills in web development. I struggle on starting my project not knowing how Drupal or should I say a CMS work. </p>
+<p>During my internship at Doghouse Agency Perth, Me and my fellow interns instructed to create a Drupal 8 fictitious website for a Pet Site to improve our skills in web development. At first, I struggle on starting my project not knowing how Drupal or should I say a CMS work. </p>
 
 <p>CMS takes care most of the back end stuff and let's you focus on creating and designing the content to save time in development. Thus, you need to make a solid plan before appraoching the project.</p>
 
-## Files for creating custom module in Drupal 8
+<p>Here I will show you the necessary files in order to build a simple Drupal 8 site. I am using a Omega subtheme which is created using the Generator from Omega theme.</p>
+
+## Files for creating custom module
 
 1. info.yml
 2. routing.yml
 3. Controller class
 4. A method from Controller class that returns a response
-5. 
 
-## Steps for creating custom module for Drupal 8
+## Steps for creating custom module
 
 1. Create your_module_name.info.yml file into the root of your module directory 
 2. Create your_module_name.routing.yml file into the root of your module directory
