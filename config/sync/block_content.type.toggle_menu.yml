@@ -1,0 +1,8 @@
+uuid: 4d533db6-faab-4da9-9a65-1f276e599936
+langcode: en
+status: true
+dependencies: {  }
+id: toggle_menu
+label: 'Toggle Menu'
+revision: 0
+description: 'DIsplays and hides the main menu on a click event use &#9776; for nav bars'

@@ -1,0 +1,25 @@
+uuid: 709e9af3-9bc9-40a3-9284-6f8ebc8dc54e
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - omegasubtheme
+id: mainnavigation
+theme: omegasubtheme
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation mobile'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

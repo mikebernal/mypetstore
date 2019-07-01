@@ -1,0 +1,25 @@
+uuid: 6c4cacb2-2905-4185-b9e6-389aa5b9a2ec
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:blurb:3192fa53-c0f4-40ba-a0f5-178e5d48e892'
+  module:
+    - block_content
+  theme:
+    - custombulma
+id: footerblurb_2
+theme: custombulma
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:3192fa53-c0f4-40ba-a0f5-178e5d48e892'
+settings:
+  id: 'block_content:3192fa53-c0f4-40ba-a0f5-178e5d48e892'
+  label: 'Footer blurb'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 230cce39-26cb-4c37-881e-408a2706294b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blurb
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.blurb.body
+field_name: body
+entity_type: block_content
+bundle: blurb
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

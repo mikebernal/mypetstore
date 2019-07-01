@@ -1,0 +1,22 @@
+uuid: 42af0d69-4541-4663-aeb2-285b8c45d0ba
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - omegasubtheme
+_core:
+  default_config_hash: Ron5OcY_0EyL7s5mDBUiLG_9LEvcC8KIPNmv6M5uAgE
+id: omegasubtheme_messages
+theme: omegasubtheme
+region: header
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

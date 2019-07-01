@@ -1,0 +1,25 @@
+uuid: 848f828d-472d-4c05-81de-4b691ce372bd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:toggle_menu:6dfb8b73-0023-4b45-8a55-128ee39e48cb'
+  module:
+    - block_content
+  theme:
+    - omegasubtheme
+id: togglemenu
+theme: omegasubtheme
+region: header
+weight: -10
+provider: null
+plugin: 'block_content:6dfb8b73-0023-4b45-8a55-128ee39e48cb'
+settings:
+  id: 'block_content:6dfb8b73-0023-4b45-8a55-128ee39e48cb'
+  label: 'Toggle menu'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

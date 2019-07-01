@@ -1,0 +1,12 @@
+// Icon settings
+// -------------------------------------------------------
+
+// Custom font icon mappings.
+$custom-icon-mappings: (
+  font-family: 'My Theme',
+  path: '../icons',
+  filename: 'icomoon',
+  codes: (
+    music: "\f001",
+  ),
+);

@@ -1,0 +1,104 @@
+uuid: a33075ec-552b-45e2-bb51-22965ce92502
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.animals.body
+    - field.field.node.animals.field_care_instructions
+    - field.field.node.animals.field_image
+    - field.field.node.animals.field_rating
+    - field.field.node.animals.field_this_is_great_for_people_w
+    - field.field.node.animals.field_type
+    - node.type.animals
+  module:
+    - ds
+    - image
+    - options
+    - text
+    - user
+    - vud
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers: null
+        outer_wrapper: null
+        attributes: ''
+        link_attribute: null
+        link_custom: null
+        classes:
+          layout_class: {  }
+    regions:
+      content:
+        - node_title
+        - field_type
+        - field_rating
+        - field_image
+        - body
+        - field_care_instructions
+        - field_this_is_great_for_people_w
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h3
+          class: ''
+          link: false
+id: node.animals.default
+targetEntityType: node
+bundle: animals
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: ds_content
+  field_care_instructions:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  field_rating:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: vote_up_down_formatter_type
+    region: ds_content
+  field_this_is_great_for_people_w:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_type:
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: ds_content
+hidden:
+  links: true

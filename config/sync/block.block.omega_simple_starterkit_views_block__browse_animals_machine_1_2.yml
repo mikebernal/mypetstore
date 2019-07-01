@@ -1,0 +1,30 @@
+uuid: 66d2a0fe-838a-40c8-9d12-e467439964e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.browse_animals
+  module:
+    - system
+    - views
+  theme:
+    - omega_simple_starterkit
+id: omega_simple_starterkit_views_block__browse_animals_machine_1_2
+theme: omega_simple_starterkit
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:browse_animals-machine_1'
+settings:
+  id: 'views_block:browse_animals-machine_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '3'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

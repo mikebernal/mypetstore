@@ -1,0 +1,16 @@
+{# Array structure: items[n] ['id', 'uid', 'title', 'body'] #}
+{% if title == "Pet Store Friend Block" %}
+  {# {{ block("Latest article", "article_block.twig") }} #}
+  <div>
+    <h3>{{ items['title'] }}</h3>
+    <p>{{ items['body'] }}</p>
+  </div>
+{% else %}
+  <h1> {{ title }} </h1>
+  {% for item in items|reverse|slice(0, 5) %}
+    <h3> {{ item.title }} </h3>
+    <p> {{ item.body }} </p>
+    <hr>
+  {% endfor %}
+  <a href="http://www.google.com">Friends Website</a>
+{% endif %}

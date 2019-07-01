@@ -1,0 +1,27 @@
+uuid: 5c02e0e7-2cc0-4f5f-afd0-8f4e625eafe4
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - omegasubtheme
+_core:
+  default_config_hash: QJJjJ6HJDvVZazsyjBAOMao6Ffxnior9KqgZxZqPh2E
+id: omegasubtheme_tools
+theme: omegasubtheme
+region: header
+weight: -2
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

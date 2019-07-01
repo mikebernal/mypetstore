@@ -1,0 +1,27 @@
+uuid: af2bf5de-877c-4b99-a286-93433c3a1767
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - custombulma
+_core:
+  default_config_hash: QJJjJ6HJDvVZazsyjBAOMao6Ffxnior9KqgZxZqPh2E
+id: custombulma_tools
+theme: custombulma
+region: header
+weight: -3
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

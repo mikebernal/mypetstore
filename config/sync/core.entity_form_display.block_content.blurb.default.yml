@@ -1,0 +1,32 @@
+uuid: 97700e78-83ab-4c2c-875f-d14885a99097
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blurb
+    - field.field.block_content.blurb.body
+  module:
+    - text
+id: block_content.blurb.default
+targetEntityType: block_content
+bundle: blurb
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

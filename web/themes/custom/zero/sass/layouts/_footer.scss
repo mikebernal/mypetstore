@@ -1,0 +1,21 @@
+// Footer
+// -------------------------------------------------------
+
+// Footer
+//
+// Defines the footer layout.
+//
+// Style guide: Layouts.footer
+//
+// Markup:
+//  <div id="footer"><div class="container">
+//    I am some content in the main site footer
+//  </div></div>
+#footer {
+  @extend %duk-island--tertiary;
+
+  > .container {
+    @extend %duk-island;
+    @extend %duk-container--x-large;
+  }
+}

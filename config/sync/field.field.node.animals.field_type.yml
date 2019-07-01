@@ -1,0 +1,21 @@
+uuid: 89e1d0ae-b3a0-4318-9b58-537945dbb7a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.animals
+  module:
+    - options
+id: node.animals.field_type
+field_name: field_type
+entity_type: node
+bundle: animals
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,18 @@
+uuid: 6444ca60-35bc-4443-a717-d3ae54930a97
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.animals
+id: node.animals.title
+field_name: title
+entity_type: node
+bundle: animals
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

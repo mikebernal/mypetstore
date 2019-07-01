@@ -1,0 +1,17 @@
+uuid: dbe1137b-ce31-4f51-9d45-a59bce81256c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Animals
+type: animals
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

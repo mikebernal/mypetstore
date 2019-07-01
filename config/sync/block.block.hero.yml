@@ -1,0 +1,31 @@
+uuid: aaf095a6-4a82-4707-a153-f55e739e6110
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_panel:effa6ecf-b267-4052-ae5c-e68baa38fa1b'
+  module:
+    - block_content
+    - system
+  theme:
+    - omegasubtheme
+id: hero
+theme: omegasubtheme
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:effa6ecf-b267-4052-ae5c-e68baa38fa1b'
+settings:
+  id: 'block_content:effa6ecf-b267-4052-ae5c-e68baa38fa1b'
+  label: Hero
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,25 @@
+uuid: dfe134b1-9168-4c9d-b2d0-b571c320e1c8
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - custombulma
+_core:
+  default_config_hash: 5nFquolsBvfMODac4talrrzlz8UQuLwL4tsU2fXxuNw
+id: custombulma_branding
+theme: custombulma
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

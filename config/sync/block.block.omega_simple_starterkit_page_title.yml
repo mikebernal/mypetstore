@@ -1,0 +1,20 @@
+uuid: ff15623e-a410-4927-8a28-976a25cbfe54
+langcode: en
+status: true
+dependencies:
+  theme:
+    - omega_simple_starterkit
+_core:
+  default_config_hash: vKDVSFwHMcXw-AbHhOcynvv3NSyQWNLZPS605mARwDw
+id: omega_simple_starterkit_page_title
+theme: omega_simple_starterkit
+region: header
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
