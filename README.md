@@ -8,6 +8,12 @@
 
 ## Files for creating custom module
 
+<p>During my internship at Doghouse Agency Perth, Me and my fellow interns instructed to create a Drupal 8 fictitious website for a Pet Site to improve our skills in web development. I struggle on starting my project not knowing how Drupal or should I say a CMS work. </p>
+
+<p>CMS takes care most of the back end stuff and let's you focus on creating and designing the content to save time in development. Thus, you need to make a solid plan before appraoching the project.</p>
+
+## Files for creating custom module
+
 1. info.yml
 2. routing.yml
 3. Controller class
