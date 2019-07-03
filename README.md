@@ -1,10 +1,6 @@
-# Drupal 8 Custom module 101
+# Drupal 8 Pet store
 
-<p>During my internship at Doghouse Agency Perth, Me and my fellow interns instructed to create a Drupal 8 fictitious website for a Pet Site to improve our skills in web development. I struggle on starting my project not knowing how Drupal or should I say a CMS work. </p>
-
-<p>CMS takes care most of the back end stuff and let's you focus on creating and designing the content to save time in development. Thus, you need to make a solid plan before appraoching the project.</p>
-
-## Files for creating custom module in Drupal 8
+## Introduction
 
 <p>During my internship at Doghouse Agency Perth, Me and my fellow interns instructed to create a Drupal 8 fictitious website for a Pet Site to improve our skills in web development. At first, I struggle on starting my project not knowing how Drupal or should I say a CMS work. </p>
 
@@ -12,11 +8,13 @@
 
 <p>Here I will show you the necessary files in order to build a simple Drupal 8 site. I am using a Omega subtheme which is created using the Generator from Omega theme.</p>
 
-## Files for creating custom module
+## Prerequisite
 
-<p>During my internship at Doghouse Agency Perth, Me and my fellow interns instructed to create a Drupal 8 fictitious website for a Pet Site to improve our skills in web development. I struggle on starting my project not knowing how Drupal or should I say a CMS work. </p>
-
-<p>CMS takes care most of the back end stuff and let's you focus on creating and designing the content to save time in development. Thus, you need to make a solid plan before appraoching the project.</p>
+1. Vagrant
+2. Cmder that supports git
+3. Virtual Box
+4. IDE
+5. Geerlingguy's DRUPAL VM
 
 ## Files for creating custom module
 
@@ -32,8 +30,6 @@
 3. Create a Controller class for the route and a method that returns a response
 4. Create a service for code modularity
 
-
-## Base theme: Omega theme
 ## Drupal modules:
 
 1.  webform
@@ -52,7 +48,7 @@
 
 ## Content types
 
-### Animals
+#### Animals
 1. title(default)
 2. image
 3. type(list)
