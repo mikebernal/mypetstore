@@ -3039,15 +3039,10 @@ a:active {
 
 #page-wrapper {
   text-align: center; }
-  @media screen and (max-width: 480px) {
-    #page-wrapper {
-      background: red; } }
 
 .hero {
-  background: yellow;
   position: relative; }
   .hero__image {
-    background: orange;
     position: relative; }
     .hero__image img {
       width: 100%;
@@ -3078,10 +3073,8 @@ a:active {
       transform: translate(-50%, -85%);
       padding: .1em .75em; } }
 
-.introduction {
-  background: blue; }
-  .introduction .introduction__blurb {
-    background: yellow; }
+.introduction__blurb {
+  text-align: center; }
 
 .more-link {
   text-align: center; }

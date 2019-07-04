@@ -1,8 +1,7 @@
 .introduction {
-  background: blue;
 
-  .introduction__blurb {
-    background: yellow;
+  &__blurb {
+    text-align: center;
   }
 
 }

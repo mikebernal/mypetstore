@@ -45,6 +45,8 @@
 11. devel
 12. admin toolbar
 13. telephone
+14. block class
+15. field group
 
 ## Content types
 
@@ -67,3 +69,12 @@
 1. Pet store friends 
    1. path '/friends-articles'
    2. block 'latest'
+
+## UI components
+
+1. Navigation
+2. Hero
+3. Introduction
+4. Browse animals
+5. Pet news
+6. Remote articles
