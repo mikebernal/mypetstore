@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+ 
+  &__image {
+    position: relative;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__heading {
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5em;
+    z-index: 2;
+    margin: auto;
+  }
+
+  &__cta {
+    background:  $sugar-hearts-you;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    padding: 1.1em 2em;
+  }
+
+  @media screen and (max-width: 480px) {
+
+    &__heading {
+      font-size: 1em;
+      padding: 0.5em;
+    }
+
+    &__cta {
+      left: 50%;
+      top: 85%;
+      transform: translate(-50%, -85%);
+      padding: .1em .75em;
+    }
+
+  }
+
+}

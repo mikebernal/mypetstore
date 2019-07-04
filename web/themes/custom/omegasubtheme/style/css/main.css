@@ -3024,6 +3024,13 @@ body.cke_editable {
  * COLOUR PALETTE (???) by sugar!
  * URL: https://www.colourlovers.com/palette/629637/()
  */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black; }
+
 @media screen and (max-width: 480px) {
   #header-outer-wrapper {
     background: #83af9b; }
@@ -3032,15 +3039,54 @@ body.cke_editable {
 
 #page-wrapper {
   text-align: center; }
+
+.hero {
+  position: relative; }
+  .hero__image {
+    position: relative; }
+    .hero__image img {
+      width: 100%;
+      height: auto; }
+  .hero__heading {
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5em;
+    z-index: 2;
+    margin: auto; }
+  .hero__cta {
+    background: #fe4365;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    padding: 1.1em 2em; }
   @media screen and (max-width: 480px) {
-    #page-wrapper {
-      background: red; } }
+    .hero__heading {
+      font-size: 1em;
+      padding: 0.5em; }
+    .hero__cta {
+      left: 50%;
+      top: 85%;
+      transform: translate(-50%, -85%);
+      padding: .1em .75em; } }
+
+.introduction__blurb {
+  text-align: center; }
 
 .more-link {
   text-align: center; }
 
 .menu--main .menu {
-  background: red; }
+  background: #83af9b; }
+  .menu--main .menu li {
+    text-align: center; }
+  .menu--main .menu li:hover {
+    background: #c8c8a9; }
+  .menu--main .menu a {
+    text-decoration: none; }
   @media screen and (max-width: 480px) {
     .menu--main .menu {
       display: flex;
@@ -3053,11 +3099,7 @@ body.cke_editable {
         list-style: none; }
       .menu--main .menu a {
         display: block;
-        padding: 0.4em 0.8em; }
-      .menu--main .menu li {
-        text-align: center; }
-      .menu--main .menu a {
-        text-decoration: none; } }
+        padding: 0.4em 0.8em; } }
 
 @media screen and (max-width: 480px) {
   .menu--main {
