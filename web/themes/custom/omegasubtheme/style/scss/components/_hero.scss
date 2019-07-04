@@ -27,7 +27,11 @@
     left: 50%;
     top: 70%;
     transform: translate(-50%, -70%);
-    padding: 1.1em 2em;
+    padding: 1em 1.7em;
+  }
+
+  &__cta:hover {
+      cursor: pointer;
   }
 
   @media screen and (max-width: 480px) {
