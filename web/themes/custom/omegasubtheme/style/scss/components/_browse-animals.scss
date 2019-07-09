@@ -1,0 +1,53 @@
+.browse-animals {
+
+  .view-filters {
+    display: none;
+  }
+
+  .views-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    
+    h2 {
+      line-height: 1;
+      font-size: 1.3em;
+    }
+
+    .view-filters {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .views-row {
+      flex-direction: column;
+      align-items: center;
+
+
+      h3 {
+        line-height: 1;
+        font-size: 1em;
+      }
+
+      .col-2, .col-3 {
+        display: none;
+      }
+
+      .browse-animals__link, .more-link {
+        line-height: 1;
+        font-size: .90em;
+      }
+
+    }
+
+    .more-link {
+      padding-top: 1em;
+    }
+    
+
+  }
+
+}

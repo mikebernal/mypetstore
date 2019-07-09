@@ -12,10 +12,7 @@ libraries:
 regions:
   header: Header
   page_top: 'Page Top'
-  highlighted: Highlighted
   content: Content
-  sidebar_first: 'Sidebar First'
-  sidebar_second: 'Sidebar Second'
   footer: Footer
   page_bottom: 'Page Bottom'
 features:

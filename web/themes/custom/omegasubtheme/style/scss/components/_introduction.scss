@@ -1,7 +1,19 @@
 .introduction {
-
+  
   &__blurb {
     text-align: center;
+  
+    p {
+      @media screen and (max-width: 480px) {
+        height: 100%;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0 1em;
+      }
+    }
+
   }
 
 }
