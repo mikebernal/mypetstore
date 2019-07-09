@@ -813,7 +813,7 @@ body.cke_editable {
   background-color: #6c757d;
   color: #ffffff; }
 
-.button, .button--transparent, .button--primary, .button--secondary, .button--tertiary {
+.button, .button--transparent, .button--primary, .hero__cta, .button--secondary, .button--tertiary {
   display: inline-block;
   font-weight: normal;
   color: #343a40;
@@ -828,14 +828,14 @@ body.cke_editable {
   font-size: inherit;
   line-height: 1.6;
   border-radius: 5px; }
-  .button:hover, .button--transparent:hover, .button--primary:hover, .button--secondary:hover, .button--tertiary:hover, .hover.button, .hover.button--transparent, .hover.button--primary, .hover.button--secondary, .hover.button--tertiary {
+  .button:hover, .button--transparent:hover, .button--primary:hover, .hero__cta:hover, .button--secondary:hover, .button--tertiary:hover, .hover.button, .hover.button--transparent, .hover.button--primary, .hover.hero__cta, .hover.button--secondary, .hover.button--tertiary {
     color: #343a40;
     text-decoration: none; }
-  .button:focus, .button--transparent:focus, .button--primary:focus, .button--secondary:focus, .button--tertiary:focus, .focus.button, .focus.button--transparent, .focus.button--primary, .focus.button--secondary, .focus.button--tertiary {
+  .button:focus, .button--transparent:focus, .button--primary:focus, .hero__cta:focus, .button--secondary:focus, .button--tertiary:focus, .focus.button, .focus.button--transparent, .focus.button--primary, .focus.hero__cta, .focus.button--secondary, .focus.button--tertiary {
     outline: 0; }
-  .disabled.button, .disabled.button--transparent, .disabled.button--primary, .disabled.button--secondary, .disabled.button--tertiary, .button:disabled, .button--transparent:disabled, .button--primary:disabled, .button--secondary:disabled, .button--tertiary:disabled {
+  .disabled.button, .disabled.button--transparent, .disabled.button--primary, .disabled.hero__cta, .disabled.button--secondary, .disabled.button--tertiary, .button:disabled, .button--transparent:disabled, .button--primary:disabled, .hero__cta:disabled, .button--secondary:disabled, .button--tertiary:disabled {
     opacity: 0.5; }
-  .button:not(:disabled):not(.disabled), .button--transparent:not(:disabled):not(.disabled), .button--primary:not(:disabled):not(.disabled), .button--secondary:not(:disabled):not(.disabled), .button--tertiary:not(:disabled):not(.disabled) {
+  .button:not(:disabled):not(.disabled), .button--transparent:not(:disabled):not(.disabled), .button--primary:not(:disabled):not(.disabled), .hero__cta:not(:disabled):not(.disabled), .button--secondary:not(:disabled):not(.disabled), .button--tertiary:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
 .button.button--transparent, .button--transparent {
@@ -855,19 +855,19 @@ body.cke_editable {
     background-color: rgba(224, 224, 224, 0);
     border-color: rgba(224, 224, 224, 0); }
 
-.button, .button--primary {
+.button, .button--primary, .hero__cta {
   color: #ffffff;
   border-color: #007bff;
   background-color: #007bff; }
-  .button:hover, .button--primary:hover, .hover.button, .hover.button--primary, .button:focus, .button--primary:focus {
+  .button:hover, .button--primary:hover, .hero__cta:hover, .hover.button, .hover.button--primary, .hover.hero__cta, .button:focus, .button--primary:focus, .hero__cta:focus {
     color: #ffffff;
     border-color: #0069d9;
     background-color: #0069d9; }
-  .disabled.button, .disabled.button--primary, .button:disabled, .button--primary:disabled {
+  .disabled.button, .disabled.button--primary, .disabled.hero__cta, .button:disabled, .button--primary:disabled, .hero__cta:disabled {
     color: #ffffff;
     background-color: #007bff;
     border-color: #007bff; }
-  .button:not(:disabled):not(.disabled):active, .button--primary:not(:disabled):not(.disabled):active, .button:not(:disabled):not(.disabled).active, .button--primary:not(:disabled):not(.disabled).active {
+  .button:not(:disabled):not(.disabled):active, .button--primary:not(:disabled):not(.disabled):active, .hero__cta:not(:disabled):not(.disabled):active, .button:not(:disabled):not(.disabled).active, .button--primary:not(:disabled):not(.disabled).active, .hero__cta:not(:disabled):not(.disabled).active {
     color: #ffffff;
     background-color: #005dc2;
     border-color: #005dc2; }
@@ -3040,6 +3040,35 @@ a:active {
 #page-wrapper {
   text-align: center; }
 
+.browse-animals .view-filters {
+  display: none; }
+
+.browse-animals .views-row {
+  display: flex;
+  justify-content: center; }
+
+@media screen and (max-width: 480px) {
+  .browse-animals h2 {
+    line-height: 1;
+    font-size: 1.3em; }
+  .browse-animals .view-filters {
+    display: flex;
+    justify-content: center;
+    padding: 0; }
+  .browse-animals .views-row {
+    flex-direction: column;
+    align-items: center; }
+    .browse-animals .views-row h3 {
+      line-height: 1;
+      font-size: 1em; }
+    .browse-animals .views-row .col-2, .browse-animals .views-row .col-3 {
+      display: none; }
+    .browse-animals .views-row .browse-animals__link, .browse-animals .views-row .more-link {
+      line-height: 1;
+      font-size: .90em; }
+  .browse-animals .more-link {
+    padding-top: 1em; } }
+
 .hero {
   position: relative; }
   .hero__image {
@@ -3048,7 +3077,8 @@ a:active {
       width: 100%;
       height: auto; }
   .hero__heading {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -3057,16 +3087,17 @@ a:active {
     z-index: 2;
     margin: auto; }
   .hero__cta {
-    background: #fe4365;
     position: absolute;
     left: 50%;
     top: 70%;
     transform: translate(-50%, -70%);
-    padding: 1.1em 2em; }
+    padding: 1em 1.7em; }
+  .hero__cta:hover {
+    cursor: pointer; }
   @media screen and (max-width: 480px) {
     .hero__heading {
-      font-size: 1em;
-      padding: 0.5em; }
+      font-size: 1.3em;
+      padding: 1em; }
     .hero__cta {
       left: 50%;
       top: 85%;
@@ -3075,6 +3106,14 @@ a:active {
 
 .introduction__blurb {
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .introduction__blurb p {
+      height: 100%;
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 0 1em; } }
 
 .more-link {
   text-align: center; }

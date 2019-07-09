@@ -11,7 +11,9 @@
   }
 
   &__heading {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    
     position: absolute;
     left: 50%;
     top: 50%;
@@ -22,19 +24,23 @@
   }
 
   &__cta {
-    background:  $sugar-hearts-you;
     position: absolute;
     left: 50%;
     top: 70%;
     transform: translate(-50%, -70%);
-    padding: 1.1em 2em;
+    padding: 1em 1.7em;
+    @extend .button--primary;
+  }
+
+  &__cta:hover {
+      cursor: pointer;
   }
 
   @media screen and (max-width: 480px) {
 
     &__heading {
-      font-size: 1em;
-      padding: 0.5em;
+      font-size: 1.3em;
+      padding: 1em;
     }
 
     &__cta {
