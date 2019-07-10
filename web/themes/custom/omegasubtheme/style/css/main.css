@@ -3163,6 +3163,31 @@ a:active {
   .menu--main {
     display: none; } }
 
+.pet-store-friends {
+  width: 49.99%;
+  float: left;
+  height: 100%; }
+  .pet-store-friends img {
+    height: auto; }
+  @media screen and (max-width: 480px) {
+    .pet-store-friends {
+      width: 100%;
+      float: none; } }
+
+.latest-article-block {
+  height: 328px;
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 480px) {
+    .latest-article-block {
+      width: 100%;
+      height: auto; }
+      .latest-article-block h3 {
+        line-height: 1;
+        font-size: 1em; }
+      .latest-article-block p {
+        line-height: 1; } }
+
 .duk-icon-bars, .duk-icon-close {
   display: none; }
   @media screen and (max-width: 480px) {

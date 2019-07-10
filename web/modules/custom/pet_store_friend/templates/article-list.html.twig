@@ -1,10 +1,14 @@
 {# Array structure: items[n] ['id', 'uid', 'title', 'body'] #}
 {% if title == "Pet Store Friend Block" %}
   {# {{ block("Latest article", "article_block.twig") }} #}
-  <div>
-    <h3>{{ items['title'] }}</h3>
-    <p>{{ items['body'] }}</p>
+  <div class="latest-article">
+    <div>
+      <h3>{{ items['title'] }}</h3>
+      <p>{{ items['body'] }}</p>
+      <a href="/friends-articles">Read more</a>
+    </div>
   </div>
+
 {% else %}
   <h1> {{ title }} </h1>
   {% for item in items|reverse|slice(0, 5) %}
