@@ -3040,6 +3040,25 @@ a:active {
 #page-wrapper {
   text-align: center; }
 
+@media screen and (max-width: 481px) {
+  .animal-news h2 {
+    line-height: 1;
+    font-size: 1.2em; }
+  .animal-news .view-animal-news .row-1 .node {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .animal-news .view-animal-news .row-1 .node h3 {
+      line-height: 1;
+      font-size: 1.2em; }
+    .animal-news .view-animal-news .row-1 .node p {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 0 1em; }
+  .animal-news .view-animal-news .row-2, .animal-news .view-animal-news .row-3 {
+    display: none; } }
+
 .browse-animals .view-filters {
   display: none; }
 

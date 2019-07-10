@@ -1,0 +1,38 @@
+.animal-news {
+
+  @media screen and (max-width: 481px) {
+    h2 {
+      line-height: 1;
+      font-size: 1.2em;
+    }
+
+    .view-animal-news {
+      
+      .row-1 {
+        
+        .node {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h3 {
+            line-height: 1;
+            font-size: 1.2em;
+          }
+
+          p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 0 1em;
+          }
+        }
+      }
+      .row-2, .row-3 {
+        display: none;
+      }
+    }
+
+  }
+
+}
