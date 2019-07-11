@@ -3028,8 +3028,26 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  text-decoration: none;
+  text-decoration: underline;
   color: black; }
+
+#footer-outer-wrapper #logo {
+  margin: 0 auto;
+  height: 40px;
+  width: 70px; }
+  #footer-outer-wrapper #logo img {
+    height: 100%;
+    width: 100%; }
+
+#footer-outer-wrapper ul {
+  display: flex;
+  justify-content: center; }
+  @media screen and (max-width: 480px) {
+    #footer-outer-wrapper ul {
+      display: none; } }
+
+#footer-outer-wrapper li {
+  padding: .2em; }
 
 @media screen and (max-width: 480px) {
   #header-outer-wrapper {
@@ -3039,6 +3057,13 @@ a:active {
 
 #page-wrapper {
   text-align: center; }
+
+article[about='/about'] {
+  min-height: 35vh;
+  text-align: justify; }
+  @media screen and (max-width: 480px) {
+    article[about='/about'] {
+      height: auto; } }
 
 .animal-news .views-row {
   padding: 2em; }
@@ -3199,7 +3224,7 @@ a:active {
     display: none; } }
 
 .pet-store-friends {
-  width: 49.99%;
+  width: 50%;
   float: left;
   height: 100%; }
   .pet-store-friends img {
