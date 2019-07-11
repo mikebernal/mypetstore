@@ -1,6 +1,35 @@
 .animal-news {
 
-  @media screen and (max-width: 481px) {
+  .views-row {
+    padding: 2em;
+  }
+
+  .group-left {
+    display: flex;
+    justify-content: center;
+    .animal-news__image {
+      height: 200px;
+      width: 278px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .group-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media screen and (max-width: 480px) {
+    
+    .group-left {
+      .animal-news__image {
+
+        height: auto;
+      }
+    }
     h2 {
       line-height: 1;
       font-size: 1.2em;
@@ -8,12 +37,19 @@
 
     .view-animal-news {
       
+      .group-right, .group-left {
+        padding: 0;
+      }
       .row-1 {
         
         .node {
           display: flex;
           flex-direction: column;
           align-items: center;
+
+          img {
+            height: auto;
+          }
 
           h3 {
             line-height: 1;

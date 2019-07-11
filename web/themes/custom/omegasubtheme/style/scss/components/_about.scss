@@ -1,0 +1,8 @@
+article[about='/about'] {
+  min-height: 35vh;
+  text-align: justify;
+
+  @media screen and (max-width: 480px) {
+    height: auto;
+  }
+}
