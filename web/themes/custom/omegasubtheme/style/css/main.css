@@ -3040,14 +3040,38 @@ a:active {
 #page-wrapper {
   text-align: center; }
 
-@media screen and (max-width: 481px) {
+.animal-news .views-row {
+  padding: 2em; }
+
+.animal-news .group-left {
+  display: flex;
+  justify-content: center; }
+  .animal-news .group-left .animal-news__image {
+    height: 200px;
+    width: 278px; }
+    .animal-news .group-left .animal-news__image img {
+      height: 100%;
+      width: 100%; }
+
+.animal-news .group-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+@media screen and (max-width: 480px) {
+  .animal-news .group-left .animal-news__image {
+    height: auto; }
   .animal-news h2 {
     line-height: 1;
     font-size: 1.2em; }
+  .animal-news .view-animal-news .group-right, .animal-news .view-animal-news .group-left {
+    padding: 0; }
   .animal-news .view-animal-news .row-1 .node {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .animal-news .view-animal-news .row-1 .node img {
+      height: auto; }
     .animal-news .view-animal-news .row-1 .node h3 {
       line-height: 1;
       font-size: 1em; }
@@ -3065,6 +3089,11 @@ a:active {
 .browse-animals .views-row {
   display: flex;
   justify-content: center; }
+  .browse-animals .views-row .browse-animals__image {
+    height: 320px; }
+    .browse-animals .views-row .browse-animals__image img {
+      height: 100%;
+      width: auto; }
 
 @media screen and (max-width: 480px) {
   .browse-animals h2 {
@@ -3085,6 +3114,8 @@ a:active {
     .browse-animals .views-row .browse-animals__link, .browse-animals .views-row .more-link {
       line-height: 1;
       font-size: .90em; }
+    .browse-animals .views-row .browse-animals__image {
+      height: 100px; }
   .browse-animals .more-link {
     padding-top: 1em; } }
 
@@ -3135,7 +3166,11 @@ a:active {
       padding: 0 1em; } }
 
 .more-link {
-  text-align: center; }
+  text-align: center;
+  padding: 2em 0; }
+  @media screen and (max-width: 480px) {
+    .more-link {
+      padding: 1em; } }
 
 .menu--main .menu {
   background: #83af9b; }
