@@ -1,0 +1,55 @@
+.view-filters {
+  
+  form {
+    display: flex;
+    justify-content: center;
+  
+    .form-type-select {
+      width: 95px;
+    }
+
+    .form-actions {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+    form {
+
+      .form-type-textfield {
+        width: 100%;
+        margin: 0;
+      }
+  
+      .form-type-select {
+        width: 100%;
+        margin: .5em 0;
+
+      }
+
+    }
+
+  }
+}
+
+
+.views-row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    line-height: 1;
+    font-size: 1em;
+  }
+
+  a {
+    font-size: .85em;
+  }
+
+  .views-col {
+    margin-bottom: 2em;
+  }
+}
+

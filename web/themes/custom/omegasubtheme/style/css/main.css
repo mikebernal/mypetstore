@@ -3056,10 +3056,11 @@ a:active {
       display: none; } }
 
 #page-wrapper {
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 article[about='/about'] {
-  min-height: 35vh;
+  min-height: 49vh;
   text-align: justify; }
   @media screen and (max-width: 480px) {
     article[about='/about'] {
@@ -3107,6 +3108,34 @@ article[about='/about'] {
       padding: 0 1em; }
   .animal-news .view-animal-news .row-2, .animal-news .view-animal-news .row-3 {
     display: none; } }
+
+.view-filters form {
+  display: flex;
+  justify-content: center; }
+  .view-filters form .form-type-select {
+    width: 95px; }
+  .view-filters form .form-actions {
+    display: inline-block; }
+
+@media screen and (max-width: 480px) {
+  .view-filters form .form-type-textfield {
+    width: 100%;
+    margin: 0; }
+  .view-filters form .form-type-select {
+    width: 100%;
+    margin: .5em 0; } }
+
+.views-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .views-row h3 {
+    line-height: 1;
+    font-size: 1em; }
+  .views-row a {
+    font-size: .85em; }
+  .views-row .views-col {
+    margin-bottom: 2em; }
 
 .browse-animals .view-filters {
   display: none; }
