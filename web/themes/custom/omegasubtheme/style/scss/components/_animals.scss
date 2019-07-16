@@ -34,10 +34,18 @@
 }
 
 
-.views-row{
+.views-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+
+  .browse-animals__image {
+    height: 250px;
+  }
+
+  img {
+    height: 100%;
+  }
 
   h3 {
     line-height: 1;
@@ -50,6 +58,19 @@
 
   .views-col {
     margin-bottom: 2em;
+  }
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+
+    .browse-animals__image {
+      height: auto;
+    }
+  
+    img {
+      height: auto;
+    }
+
   }
 }
 

@@ -3058,13 +3058,27 @@ a:active {
 #page-wrapper {
   text-align: center;
   overflow: hidden; }
-
-article[about='/about'] {
-  min-height: 49vh;
-  text-align: justify; }
+  #page-wrapper #content-outer-wrapper {
+    min-height: 70vh; }
   @media screen and (max-width: 480px) {
-    article[about='/about'] {
+    #page-wrapper #content-outer-wrapper {
       height: auto; } }
+
+div[data-history-node-id='25'] {
+  min-height: 49vh;
+  text-align: justify;
+  margin-top: 2em; }
+  div[data-history-node-id='25'] p {
+    margin-top: 3em; }
+  @media screen and (max-width: 480px) {
+    div[data-history-node-id='25'] {
+      height: auto;
+      margin-top: 0;
+      padding: 1em;
+      border-right: .5px solid gray;
+      border-bottom: .5px solid gray; }
+      div[data-history-node-id='25'] p {
+        margin-top: 0; } }
 
 .animal-news .views-row {
   padding: 2em; }
@@ -3127,8 +3141,12 @@ article[about='/about'] {
 
 .views-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center; }
+  .views-row .browse-animals__image {
+    height: 250px; }
+  .views-row img {
+    height: 100%; }
   .views-row h3 {
     line-height: 1;
     font-size: 1em; }
@@ -3136,6 +3154,13 @@ article[about='/about'] {
     font-size: .85em; }
   .views-row .views-col {
     margin-bottom: 2em; }
+  @media screen and (max-width: 480px) {
+    .views-row {
+      flex-direction: column; }
+      .views-row .browse-animals__image {
+        height: auto; }
+      .views-row img {
+        height: auto; } }
 
 .browse-animals .view-filters {
   display: none; }
