@@ -3100,28 +3100,71 @@ div[data-history-node-id='25'] {
 
 @media screen and (max-width: 480px) {
   .animal-news .group-left .animal-news__image {
-    height: auto; }
+    height: 250px; }
+    .animal-news .group-left .animal-news__image img {
+      height: 100%; }
   .animal-news h2 {
     line-height: 1;
     font-size: 1.2em; }
-  .animal-news .view-animal-news .group-right, .animal-news .view-animal-news .group-left {
-    padding: 0; }
-  .animal-news .view-animal-news .row-1 .node {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .animal-news .view-animal-news .row-1 .node img {
-      height: auto; }
-    .animal-news .view-animal-news .row-1 .node h3 {
-      line-height: 1;
-      font-size: 1em; }
-    .animal-news .view-animal-news .row-1 .node p {
+  .animal-news .view-animal-news {
+    overflow: hidden; }
+    .animal-news .view-animal-news .group-right, .animal-news .view-animal-news .group-left {
+      padding: 0; }
+    .animal-news .view-animal-news .group-right .animal-news__description p {
+      text-align: center;
+      width: 80%;
+      height: 100%;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
       padding: 0 1em; }
-  .animal-news .view-animal-news .row-2, .animal-news .view-animal-news .row-3 {
-    display: none; } }
+    .animal-news .view-animal-news .row-1 .node {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .animal-news .view-animal-news .row-1 .node img {
+        height: auto; }
+      .animal-news .view-animal-news .row-1 .node h3 {
+        line-height: 1;
+        font-size: 1em; }
+      .animal-news .view-animal-news .row-1 .node p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0 1em; }
+    .animal-news .view-animal-news .row-2, .animal-news .view-animal-news .row-3 {
+      display: none; } }
+
+.node--view-mode-full .animal-content-row-1 {
+  display: flex;
+  flex-direction: row;
+  text-align: left; }
+  .node--view-mode-full .animal-content-row-1 .animal-content__left {
+    flex: 1; }
+  .node--view-mode-full .animal-content-row-1 .animal-content__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+    .node--view-mode-full .animal-content-row-1 .animal-content__right .vud-widget {
+      text-align: right;
+      margin: 0; }
+      @media screen and (max-width: 480px) {
+        .node--view-mode-full .animal-content-row-1 .animal-content__right .vud-widget {
+          text-align: left; }
+          .node--view-mode-full .animal-content-row-1 .animal-content__right .vud-widget .up-score {
+            padding-left: 0; } }
+    .node--view-mode-full .animal-content-row-1 .animal-content__right .animal-page__type {
+      display: flex; }
+    .node--view-mode-full .animal-content-row-1 .animal-content__right .animal-page__description {
+      flex: 1;
+      text-align: justify; }
+  @media screen and (max-width: 480px) {
+    .node--view-mode-full .animal-content-row-1 {
+      flex-direction: column;
+      text-align: center; } }
+
+.node--view-mode-full .animal-page__care-instructions, .node--view-mode-full .animal-page_great-for-people {
+  text-align: left; }
 
 .view-filters form {
   display: flex;

@@ -1,0 +1,52 @@
+.node--view-mode-full {
+  .animal-content-row-1 {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+    .animal-content__left {
+      flex: 1;
+
+    }
+
+    .animal-content__right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      
+      .vud-widget {
+        text-align: right;
+        margin: 0;
+
+        @media screen and (max-width: 480px) {
+          text-align: left;
+
+          .up-score {
+            padding-left: 0;
+          }
+        }
+      }
+
+      .animal-page__type {
+        display: flex;
+      }
+
+      .animal-page__description {
+        flex: 1;
+        text-align: justify;
+      }
+      
+    }
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+  }
+
+  .animal-page__care-instructions, .animal-page_great-for-people {
+    text-align: left;
+  }
+
+}
