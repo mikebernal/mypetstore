@@ -1,9 +1,18 @@
 #page-wrapper {
   @extend %duk-container--x-large;
   text-align: center;
+  overflow: hidden;
+
+  #content-outer-wrapper {
+    // background: red;
+    min-height: 70vh;
+  }
   
   @media screen and (max-width: 480px) {
 
+    #content-outer-wrapper {
+      height: auto;
+    }
     
   }
 }

@@ -1,8 +1,21 @@
-article[about='/about'] {
-  min-height: 35vh;
+div[data-history-node-id='25'] {
+  min-height: 49vh;
   text-align: justify;
+  margin-top: 2em;
+
+  p {
+    margin-top: 3em;
+  }
 
   @media screen and (max-width: 480px) {
     height: auto;
+    margin-top: 0;
+    padding: 1em;
+    border-right: .5px solid gray;
+    border-bottom: .5px solid gray;
+
+    p {
+      margin-top: 0;
+    }
   }
 }

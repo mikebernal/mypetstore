@@ -813,7 +813,7 @@ body.cke_editable {
   background-color: #6c757d;
   color: #ffffff; }
 
-.button, .button--transparent, .button--primary, .hero__cta, .button--secondary, .button--tertiary {
+.button, .button--transparent, .button--primary, .node--view-mode-full .animal-row-2 .animal-page__link, .hero__cta, .button--secondary, .button--tertiary {
   display: inline-block;
   font-weight: normal;
   color: #343a40;
@@ -828,14 +828,14 @@ body.cke_editable {
   font-size: inherit;
   line-height: 1.6;
   border-radius: 5px; }
-  .button:hover, .button--transparent:hover, .button--primary:hover, .hero__cta:hover, .button--secondary:hover, .button--tertiary:hover, .hover.button, .hover.button--transparent, .hover.button--primary, .hover.hero__cta, .hover.button--secondary, .hover.button--tertiary {
+  .button:hover, .button--transparent:hover, .button--primary:hover, .node--view-mode-full .animal-row-2 .animal-page__link:hover, .hero__cta:hover, .button--secondary:hover, .button--tertiary:hover, .hover.button, .hover.button--transparent, .hover.button--primary, .node--view-mode-full .animal-row-2 .hover.animal-page__link, .hover.hero__cta, .hover.button--secondary, .hover.button--tertiary {
     color: #343a40;
     text-decoration: none; }
-  .button:focus, .button--transparent:focus, .button--primary:focus, .hero__cta:focus, .button--secondary:focus, .button--tertiary:focus, .focus.button, .focus.button--transparent, .focus.button--primary, .focus.hero__cta, .focus.button--secondary, .focus.button--tertiary {
+  .button:focus, .button--transparent:focus, .button--primary:focus, .node--view-mode-full .animal-row-2 .animal-page__link:focus, .hero__cta:focus, .button--secondary:focus, .button--tertiary:focus, .focus.button, .focus.button--transparent, .focus.button--primary, .node--view-mode-full .animal-row-2 .focus.animal-page__link, .focus.hero__cta, .focus.button--secondary, .focus.button--tertiary {
     outline: 0; }
-  .disabled.button, .disabled.button--transparent, .disabled.button--primary, .disabled.hero__cta, .disabled.button--secondary, .disabled.button--tertiary, .button:disabled, .button--transparent:disabled, .button--primary:disabled, .hero__cta:disabled, .button--secondary:disabled, .button--tertiary:disabled {
+  .disabled.button, .disabled.button--transparent, .disabled.button--primary, .node--view-mode-full .animal-row-2 .disabled.animal-page__link, .disabled.hero__cta, .disabled.button--secondary, .disabled.button--tertiary, .button:disabled, .button--transparent:disabled, .button--primary:disabled, .node--view-mode-full .animal-row-2 .animal-page__link:disabled, .hero__cta:disabled, .button--secondary:disabled, .button--tertiary:disabled {
     opacity: 0.5; }
-  .button:not(:disabled):not(.disabled), .button--transparent:not(:disabled):not(.disabled), .button--primary:not(:disabled):not(.disabled), .hero__cta:not(:disabled):not(.disabled), .button--secondary:not(:disabled):not(.disabled), .button--tertiary:not(:disabled):not(.disabled) {
+  .button:not(:disabled):not(.disabled), .button--transparent:not(:disabled):not(.disabled), .button--primary:not(:disabled):not(.disabled), .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled), .hero__cta:not(:disabled):not(.disabled), .button--secondary:not(:disabled):not(.disabled), .button--tertiary:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
 .button.button--transparent, .button--transparent {
@@ -855,19 +855,19 @@ body.cke_editable {
     background-color: rgba(224, 224, 224, 0);
     border-color: rgba(224, 224, 224, 0); }
 
-.button, .button--primary, .hero__cta {
+.button, .button--primary, .node--view-mode-full .animal-row-2 .animal-page__link, .hero__cta {
   color: #ffffff;
   border-color: #007bff;
   background-color: #007bff; }
-  .button:hover, .button--primary:hover, .hero__cta:hover, .hover.button, .hover.button--primary, .hover.hero__cta, .button:focus, .button--primary:focus, .hero__cta:focus {
+  .button:hover, .button--primary:hover, .node--view-mode-full .animal-row-2 .animal-page__link:hover, .hero__cta:hover, .hover.button, .hover.button--primary, .node--view-mode-full .animal-row-2 .hover.animal-page__link, .hover.hero__cta, .button:focus, .button--primary:focus, .node--view-mode-full .animal-row-2 .animal-page__link:focus, .hero__cta:focus {
     color: #ffffff;
     border-color: #0069d9;
     background-color: #0069d9; }
-  .disabled.button, .disabled.button--primary, .disabled.hero__cta, .button:disabled, .button--primary:disabled, .hero__cta:disabled {
+  .disabled.button, .disabled.button--primary, .node--view-mode-full .animal-row-2 .disabled.animal-page__link, .disabled.hero__cta, .button:disabled, .button--primary:disabled, .node--view-mode-full .animal-row-2 .animal-page__link:disabled, .hero__cta:disabled {
     color: #ffffff;
     background-color: #007bff;
     border-color: #007bff; }
-  .button:not(:disabled):not(.disabled):active, .button--primary:not(:disabled):not(.disabled):active, .hero__cta:not(:disabled):not(.disabled):active, .button:not(:disabled):not(.disabled).active, .button--primary:not(:disabled):not(.disabled).active, .hero__cta:not(:disabled):not(.disabled).active {
+  .button:not(:disabled):not(.disabled):active, .button--primary:not(:disabled):not(.disabled):active, .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled):active, .hero__cta:not(:disabled):not(.disabled):active, .button:not(:disabled):not(.disabled).active, .button--primary:not(:disabled):not(.disabled).active, .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled).active, .hero__cta:not(:disabled):not(.disabled).active {
     color: #ffffff;
     background-color: #005dc2;
     border-color: #005dc2; }
@@ -3056,14 +3056,29 @@ a:active {
       display: none; } }
 
 #page-wrapper {
-  text-align: center; }
-
-article[about='/about'] {
-  min-height: 35vh;
-  text-align: justify; }
+  text-align: center;
+  overflow: hidden; }
+  #page-wrapper #content-outer-wrapper {
+    min-height: 70vh; }
   @media screen and (max-width: 480px) {
-    article[about='/about'] {
+    #page-wrapper #content-outer-wrapper {
       height: auto; } }
+
+div[data-history-node-id='25'] {
+  min-height: 49vh;
+  text-align: justify;
+  margin-top: 2em; }
+  div[data-history-node-id='25'] p {
+    margin-top: 3em; }
+  @media screen and (max-width: 480px) {
+    div[data-history-node-id='25'] {
+      height: auto;
+      margin-top: 0;
+      padding: 1em;
+      border-right: .5px solid gray;
+      border-bottom: .5px solid gray; }
+      div[data-history-node-id='25'] p {
+        margin-top: 0; } }
 
 .animal-news .views-row {
   padding: 2em; }
@@ -3085,28 +3100,122 @@ article[about='/about'] {
 
 @media screen and (max-width: 480px) {
   .animal-news .group-left .animal-news__image {
-    height: auto; }
+    height: 250px; }
+    .animal-news .group-left .animal-news__image img {
+      height: 100%; }
   .animal-news h2 {
     line-height: 1;
     font-size: 1.2em; }
-  .animal-news .view-animal-news .group-right, .animal-news .view-animal-news .group-left {
-    padding: 0; }
-  .animal-news .view-animal-news .row-1 .node {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .animal-news .view-animal-news .row-1 .node img {
-      height: auto; }
-    .animal-news .view-animal-news .row-1 .node h3 {
-      line-height: 1;
-      font-size: 1em; }
-    .animal-news .view-animal-news .row-1 .node p {
+  .animal-news .view-animal-news {
+    overflow: hidden; }
+    .animal-news .view-animal-news .group-right, .animal-news .view-animal-news .group-left {
+      padding: 0; }
+    .animal-news .view-animal-news .group-right .animal-news__description p {
+      text-align: center;
+      width: 80%;
+      height: 100%;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
       padding: 0 1em; }
-  .animal-news .view-animal-news .row-2, .animal-news .view-animal-news .row-3 {
-    display: none; } }
+    .animal-news .view-animal-news .row-1 .node {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .animal-news .view-animal-news .row-1 .node img {
+        height: auto; }
+      .animal-news .view-animal-news .row-1 .node h3 {
+        line-height: 1;
+        font-size: 1em; }
+      .animal-news .view-animal-news .row-1 .node p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0 1em; }
+    .animal-news .view-animal-news .row-2, .animal-news .view-animal-news .row-3 {
+      display: none; } }
+
+.node--view-mode-full .animal-content-row-1 {
+  display: flex;
+  flex-direction: row;
+  text-align: left; }
+  .node--view-mode-full .animal-content-row-1 .animal-content__left {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+    .node--view-mode-full .animal-content-row-1 .animal-content__left .animal-page__title {
+      flex: 1; }
+    .node--view-mode-full .animal-content-row-1 .animal-content__left .animal-page__image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .node--view-mode-full .animal-content-row-1 .animal-content__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+    .node--view-mode-full .animal-content-row-1 .animal-content__right .vud-widget {
+      text-align: right;
+      margin: 0; }
+      @media screen and (max-width: 480px) {
+        .node--view-mode-full .animal-content-row-1 .animal-content__right .vud-widget {
+          text-align: left; }
+          .node--view-mode-full .animal-content-row-1 .animal-content__right .vud-widget .up-score {
+            padding-left: 0; } }
+    .node--view-mode-full .animal-content-row-1 .animal-content__right .animal-page__type {
+      display: flex; }
+    .node--view-mode-full .animal-content-row-1 .animal-content__right .animal-page__description {
+      flex: 1;
+      text-align: justify; }
+  @media screen and (max-width: 480px) {
+    .node--view-mode-full .animal-content-row-1 {
+      flex-direction: column;
+      text-align: center; } }
+
+.node--view-mode-full .animal-row-2 {
+  text-align: left;
+  text-align: justify; }
+  .node--view-mode-full .animal-row-2 .animal-page__care-instructions {
+    margin-top: 1em; }
+
+.view-filters form {
+  display: flex;
+  justify-content: center; }
+  .view-filters form .form-type-select {
+    width: 95px; }
+  .view-filters form .form-actions {
+    display: inline-block; }
+
+@media screen and (max-width: 480px) {
+  .view-filters form .form-type-textfield {
+    width: 100%;
+    margin: 0; }
+  .view-filters form .form-type-select {
+    width: 100%;
+    margin: .5em 0; } }
+
+.views-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .views-row .browse-animals__image {
+    height: 250px; }
+  .views-row img {
+    height: 100%; }
+  .views-row h3 {
+    line-height: 1;
+    font-size: 1em; }
+  .views-row a {
+    font-size: .85em; }
+  .views-row .views-col {
+    margin-bottom: 2em; }
+  @media screen and (max-width: 480px) {
+    .views-row {
+      flex-direction: column; }
+      .views-row .browse-animals__image {
+        height: auto; }
+      .views-row img {
+        height: auto; } }
 
 .browse-animals .view-filters {
   display: none; }

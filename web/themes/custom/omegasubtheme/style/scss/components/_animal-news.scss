@@ -21,14 +21,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
   }
   @media screen and (max-width: 480px) {
     
     .group-left {
       .animal-news__image {
+        
+        height: 250px;
 
-        height: auto;
+        img {
+          height: 100%;
+        }
       }
+      
     }
     h2 {
       line-height: 1;
@@ -36,9 +42,28 @@
     }
 
     .view-animal-news {
+      overflow: hidden;
       
       .group-right, .group-left {
         padding: 0;
+      }
+
+      .group-right {
+
+        .animal-news__description {
+
+          p {
+            text-align: center;
+            width: 80%;
+            height: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 0 1em;
+
+          }
+        }
+
       }
       .row-1 {
         
