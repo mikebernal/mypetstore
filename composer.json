@@ -40,7 +40,7 @@
         "drupal/omega": "^5.0@alpha",
         "drupal/page_manager": "^4.0@beta",
         "drupal/pathauto": "^1.4",
-        "drupal/rate": "^1.0",
+        "drupal/rate": "^1.0@alpha",
         "drupal/vote_up_down": "^1.0",
         "drupal/votingapi": "^3.0",
         "drupal/webform": "^5.2",

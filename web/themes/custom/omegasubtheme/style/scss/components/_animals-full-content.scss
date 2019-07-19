@@ -6,6 +6,19 @@
 
     .animal-content__left {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .animal-page__title {
+        flex: 1;
+      }
+      .animal-page__image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
 
     }
 
@@ -45,8 +58,20 @@
 
   }
 
-  .animal-page__care-instructions, .animal-page_great-for-people {
+  .animal-row-2 {
     text-align: left;
+    text-align: justify;
+
+    .animal-page__care-instructions {
+      margin-top: 1em;
+
+    }
+  
+    .animal-page__link {
+      @extend .button--primary;
+      
+    }
   }
+
 
 }

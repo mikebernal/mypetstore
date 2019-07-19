@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28274efe88eb3640cd686c39fa4b6679",
+    "content-hash": "485b5c304633563a70093cf17deb3983",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3620,17 +3620,17 @@
         },
         {
             "name": "drupal/rate",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rate.git",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rate-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "6fb31d6508aaaf8fbe8d7e897cf202357d543760"
+                "url": "https://ftp.drupal.org/files/projects/rate-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "3d56906077d57344df10ec1cd8157d3e18540599"
             },
             "require": {
                 "drupal/core": "*",
@@ -3642,8 +3642,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1539184681",
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1563467285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3655,6 +3655,14 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "JordiK",
+                    "homepage": "https://www.drupal.org/user/3472907"
+                },
+                {
+                    "name": "Krzysztof Domański",
+                    "homepage": "https://www.drupal.org/user/3572982"
+                },
                 {
                     "name": "brenk28",
                     "homepage": "https://www.drupal.org/user/65985"
@@ -9843,7 +9851,8 @@
         "drupal/contact_storage": 10,
         "drupal/fences": 15,
         "drupal/omega": 15,
-        "drupal/page_manager": 10
+        "drupal/page_manager": 10,
+        "drupal/rate": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
