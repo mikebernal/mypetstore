@@ -59,7 +59,6 @@
   }
 
   .animal-row-2 {
-    text-align: left;
     text-align: justify;
 
     .animal-page__care-instructions {
@@ -69,6 +68,10 @@
   
     .animal-page__link {
       @extend .button--primary;
+
+      @media screen and (max-width: 480px) {
+      
+      }
       
     }
   }
