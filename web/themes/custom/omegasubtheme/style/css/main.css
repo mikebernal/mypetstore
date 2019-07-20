@@ -813,7 +813,7 @@ body.cke_editable {
   background-color: #6c757d;
   color: #ffffff; }
 
-.button, .button--transparent, .button--primary, .node--view-mode-full .animal-row-2 .animal-page__link, .hero__cta, .button--secondary, .button--tertiary {
+.button, .button--transparent, .button--primary, .node--view-mode-full .animal-row-2 .animal-page__link, .hero__cta, .news-full .news-full__link, .button--secondary, .button--tertiary {
   display: inline-block;
   font-weight: normal;
   color: #343a40;
@@ -828,14 +828,14 @@ body.cke_editable {
   font-size: inherit;
   line-height: 1.6;
   border-radius: 5px; }
-  .button:hover, .button--transparent:hover, .button--primary:hover, .node--view-mode-full .animal-row-2 .animal-page__link:hover, .hero__cta:hover, .button--secondary:hover, .button--tertiary:hover, .hover.button, .hover.button--transparent, .hover.button--primary, .node--view-mode-full .animal-row-2 .hover.animal-page__link, .hover.hero__cta, .hover.button--secondary, .hover.button--tertiary {
+  .button:hover, .button--transparent:hover, .button--primary:hover, .node--view-mode-full .animal-row-2 .animal-page__link:hover, .hero__cta:hover, .news-full .news-full__link:hover, .button--secondary:hover, .button--tertiary:hover, .hover.button, .hover.button--transparent, .hover.button--primary, .node--view-mode-full .animal-row-2 .hover.animal-page__link, .hover.hero__cta, .news-full .hover.news-full__link, .hover.button--secondary, .hover.button--tertiary {
     color: #343a40;
     text-decoration: none; }
-  .button:focus, .button--transparent:focus, .button--primary:focus, .node--view-mode-full .animal-row-2 .animal-page__link:focus, .hero__cta:focus, .button--secondary:focus, .button--tertiary:focus, .focus.button, .focus.button--transparent, .focus.button--primary, .node--view-mode-full .animal-row-2 .focus.animal-page__link, .focus.hero__cta, .focus.button--secondary, .focus.button--tertiary {
+  .button:focus, .button--transparent:focus, .button--primary:focus, .node--view-mode-full .animal-row-2 .animal-page__link:focus, .hero__cta:focus, .news-full .news-full__link:focus, .button--secondary:focus, .button--tertiary:focus, .focus.button, .focus.button--transparent, .focus.button--primary, .node--view-mode-full .animal-row-2 .focus.animal-page__link, .focus.hero__cta, .news-full .focus.news-full__link, .focus.button--secondary, .focus.button--tertiary {
     outline: 0; }
-  .disabled.button, .disabled.button--transparent, .disabled.button--primary, .node--view-mode-full .animal-row-2 .disabled.animal-page__link, .disabled.hero__cta, .disabled.button--secondary, .disabled.button--tertiary, .button:disabled, .button--transparent:disabled, .button--primary:disabled, .node--view-mode-full .animal-row-2 .animal-page__link:disabled, .hero__cta:disabled, .button--secondary:disabled, .button--tertiary:disabled {
+  .disabled.button, .disabled.button--transparent, .disabled.button--primary, .node--view-mode-full .animal-row-2 .disabled.animal-page__link, .disabled.hero__cta, .news-full .disabled.news-full__link, .disabled.button--secondary, .disabled.button--tertiary, .button:disabled, .button--transparent:disabled, .button--primary:disabled, .node--view-mode-full .animal-row-2 .animal-page__link:disabled, .hero__cta:disabled, .news-full .news-full__link:disabled, .button--secondary:disabled, .button--tertiary:disabled {
     opacity: 0.5; }
-  .button:not(:disabled):not(.disabled), .button--transparent:not(:disabled):not(.disabled), .button--primary:not(:disabled):not(.disabled), .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled), .hero__cta:not(:disabled):not(.disabled), .button--secondary:not(:disabled):not(.disabled), .button--tertiary:not(:disabled):not(.disabled) {
+  .button:not(:disabled):not(.disabled), .button--transparent:not(:disabled):not(.disabled), .button--primary:not(:disabled):not(.disabled), .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled), .hero__cta:not(:disabled):not(.disabled), .news-full .news-full__link:not(:disabled):not(.disabled), .button--secondary:not(:disabled):not(.disabled), .button--tertiary:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
 .button.button--transparent, .button--transparent {
@@ -855,19 +855,19 @@ body.cke_editable {
     background-color: rgba(224, 224, 224, 0);
     border-color: rgba(224, 224, 224, 0); }
 
-.button, .button--primary, .node--view-mode-full .animal-row-2 .animal-page__link, .hero__cta {
+.button, .button--primary, .node--view-mode-full .animal-row-2 .animal-page__link, .hero__cta, .news-full .news-full__link {
   color: #ffffff;
   border-color: #007bff;
   background-color: #007bff; }
-  .button:hover, .button--primary:hover, .node--view-mode-full .animal-row-2 .animal-page__link:hover, .hero__cta:hover, .hover.button, .hover.button--primary, .node--view-mode-full .animal-row-2 .hover.animal-page__link, .hover.hero__cta, .button:focus, .button--primary:focus, .node--view-mode-full .animal-row-2 .animal-page__link:focus, .hero__cta:focus {
+  .button:hover, .button--primary:hover, .node--view-mode-full .animal-row-2 .animal-page__link:hover, .hero__cta:hover, .news-full .news-full__link:hover, .hover.button, .hover.button--primary, .node--view-mode-full .animal-row-2 .hover.animal-page__link, .hover.hero__cta, .news-full .hover.news-full__link, .button:focus, .button--primary:focus, .node--view-mode-full .animal-row-2 .animal-page__link:focus, .hero__cta:focus, .news-full .news-full__link:focus {
     color: #ffffff;
     border-color: #0069d9;
     background-color: #0069d9; }
-  .disabled.button, .disabled.button--primary, .node--view-mode-full .animal-row-2 .disabled.animal-page__link, .disabled.hero__cta, .button:disabled, .button--primary:disabled, .node--view-mode-full .animal-row-2 .animal-page__link:disabled, .hero__cta:disabled {
+  .disabled.button, .disabled.button--primary, .node--view-mode-full .animal-row-2 .disabled.animal-page__link, .disabled.hero__cta, .news-full .disabled.news-full__link, .button:disabled, .button--primary:disabled, .node--view-mode-full .animal-row-2 .animal-page__link:disabled, .hero__cta:disabled, .news-full .news-full__link:disabled {
     color: #ffffff;
     background-color: #007bff;
     border-color: #007bff; }
-  .button:not(:disabled):not(.disabled):active, .button--primary:not(:disabled):not(.disabled):active, .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled):active, .hero__cta:not(:disabled):not(.disabled):active, .button:not(:disabled):not(.disabled).active, .button--primary:not(:disabled):not(.disabled).active, .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled).active, .hero__cta:not(:disabled):not(.disabled).active {
+  .button:not(:disabled):not(.disabled):active, .button--primary:not(:disabled):not(.disabled):active, .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled):active, .hero__cta:not(:disabled):not(.disabled):active, .news-full .news-full__link:not(:disabled):not(.disabled):active, .button:not(:disabled):not(.disabled).active, .button--primary:not(:disabled):not(.disabled).active, .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled).active, .hero__cta:not(:disabled):not(.disabled).active, .news-full .news-full__link:not(:disabled):not(.disabled).active {
     color: #ffffff;
     background-color: #005dc2;
     border-color: #005dc2; }
@@ -3089,7 +3089,8 @@ div[data-history-node-id='25'] {
     justify-content: center; }
     .animal-news-page .node--type-news .group-left .animal-news__image {
       height: 200px;
-      width: 278px; }
+      width: 290px;
+      background: red; }
       .animal-news-page .node--type-news .group-left .animal-news__image img {
         height: 100%;
         width: 100%; }
@@ -3263,7 +3264,7 @@ div[data-history-node-id='25'] {
   display: flex;
   justify-content: center; }
   .browse-animals .views-row .browse-animals__image {
-    height: 320px; }
+    height: 220px; }
     .browse-animals .views-row .browse-animals__image img {
       height: 100%;
       width: auto; }
@@ -3288,7 +3289,9 @@ div[data-history-node-id='25'] {
       line-height: 1;
       font-size: .90em; }
     .browse-animals .views-row .browse-animals__image {
-      height: 100px; }
+      height: auto; }
+      .browse-animals .views-row .browse-animals__image img {
+        height: auto; }
   .browse-animals .more-link {
     padding-top: 1em; } }
 
@@ -3370,6 +3373,20 @@ div[data-history-node-id='25'] {
 @media screen and (max-width: 480px) {
   .menu--main {
     display: none; } }
+
+.news-full {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify; }
+  .news-full .news-full__image {
+    height: 100%;
+    width: 100%; }
+  .news-full .news-full__date {
+    padding: 1em 0;
+    display: flex; }
+  .news-full .news-full__link {
+    align-self: center; }
 
 .pet-store-friends {
   width: 50%;

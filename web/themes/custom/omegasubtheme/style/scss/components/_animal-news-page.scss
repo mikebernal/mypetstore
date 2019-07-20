@@ -10,7 +10,8 @@
       justify-content: center;
       .animal-news__image {
         height: 200px;
-        width: 278px;
+        width: 290px;
+        background: red;
   
         img {
           height: 100%;
@@ -42,8 +43,7 @@
 
         .animal-news__image {
           height: auto;
-          
-          
+
         }
       }
       .group-right {

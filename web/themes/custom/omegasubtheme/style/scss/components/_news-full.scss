@@ -1,0 +1,22 @@
+.news-full {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+
+  .news-full__image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .news-full__date {
+    padding: 1em 0;
+    display: flex;
+  }
+
+  .news-full__link {
+    @extend .button--primary;
+    align-self: center;
+  }
+
+}

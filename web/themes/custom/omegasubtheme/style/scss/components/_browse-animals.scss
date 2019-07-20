@@ -10,7 +10,7 @@
     justify-content: center;
 
     .browse-animals__image {
-      height: 320px;
+      height: 220px;
 
       img {
         height: 100%;
@@ -53,7 +53,10 @@
       }
 
       .browse-animals__image {
-        height: 100px;
+        height: auto;
+        img {
+          height: auto;
+        }
       }
 
     }
