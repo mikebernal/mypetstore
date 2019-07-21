@@ -13,12 +13,11 @@
   &__heading {
     background: rgba(255, 255, 255, 0.3);
     width: 100%;
-    
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 1.5em;
+    padding: 4.5em;
     z-index: 2;
     margin: auto;
   }
@@ -30,6 +29,7 @@
     transform: translate(-50%, -70%);
     padding: 1em 1.7em;
     @extend .button--primary;
+    z-index: 2;
   }
 
   &__cta:hover {

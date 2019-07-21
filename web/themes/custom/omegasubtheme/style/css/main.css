@@ -813,7 +813,7 @@ body.cke_editable {
   background-color: #6c757d;
   color: #ffffff; }
 
-.button, .button--transparent, .button--primary, .node--view-mode-full .animal-row-2 .animal-page__link, .hero__cta, .news-full .news-full__link, .button--secondary, .button--tertiary {
+.button, .button--transparent, .button--primary, .node--view-mode-full .animal-row-2 .animal-page__link, .browse-animals .more-link, .hero__cta, .more-link, .remote-articles-page__link, .news-full .news-full__link, .button--secondary, .button--tertiary {
   display: inline-block;
   font-weight: normal;
   color: #343a40;
@@ -828,14 +828,14 @@ body.cke_editable {
   font-size: inherit;
   line-height: 1.6;
   border-radius: 5px; }
-  .button:hover, .button--transparent:hover, .button--primary:hover, .node--view-mode-full .animal-row-2 .animal-page__link:hover, .hero__cta:hover, .news-full .news-full__link:hover, .button--secondary:hover, .button--tertiary:hover, .hover.button, .hover.button--transparent, .hover.button--primary, .node--view-mode-full .animal-row-2 .hover.animal-page__link, .hover.hero__cta, .news-full .hover.news-full__link, .hover.button--secondary, .hover.button--tertiary {
+  .button:hover, .button--transparent:hover, .button--primary:hover, .node--view-mode-full .animal-row-2 .animal-page__link:hover, .hero__cta:hover, .more-link:hover, .remote-articles-page__link:hover, .news-full .news-full__link:hover, .button--secondary:hover, .button--tertiary:hover, .hover.button, .hover.button--transparent, .hover.button--primary, .node--view-mode-full .animal-row-2 .hover.animal-page__link, .hover.hero__cta, .hover.more-link, .hover.remote-articles-page__link, .news-full .hover.news-full__link, .hover.button--secondary, .hover.button--tertiary {
     color: #343a40;
     text-decoration: none; }
-  .button:focus, .button--transparent:focus, .button--primary:focus, .node--view-mode-full .animal-row-2 .animal-page__link:focus, .hero__cta:focus, .news-full .news-full__link:focus, .button--secondary:focus, .button--tertiary:focus, .focus.button, .focus.button--transparent, .focus.button--primary, .node--view-mode-full .animal-row-2 .focus.animal-page__link, .focus.hero__cta, .news-full .focus.news-full__link, .focus.button--secondary, .focus.button--tertiary {
+  .button:focus, .button--transparent:focus, .button--primary:focus, .node--view-mode-full .animal-row-2 .animal-page__link:focus, .hero__cta:focus, .more-link:focus, .remote-articles-page__link:focus, .news-full .news-full__link:focus, .button--secondary:focus, .button--tertiary:focus, .focus.button, .focus.button--transparent, .focus.button--primary, .node--view-mode-full .animal-row-2 .focus.animal-page__link, .focus.hero__cta, .focus.more-link, .focus.remote-articles-page__link, .news-full .focus.news-full__link, .focus.button--secondary, .focus.button--tertiary {
     outline: 0; }
-  .disabled.button, .disabled.button--transparent, .disabled.button--primary, .node--view-mode-full .animal-row-2 .disabled.animal-page__link, .disabled.hero__cta, .news-full .disabled.news-full__link, .disabled.button--secondary, .disabled.button--tertiary, .button:disabled, .button--transparent:disabled, .button--primary:disabled, .node--view-mode-full .animal-row-2 .animal-page__link:disabled, .hero__cta:disabled, .news-full .news-full__link:disabled, .button--secondary:disabled, .button--tertiary:disabled {
+  .disabled.button, .disabled.button--transparent, .disabled.button--primary, .node--view-mode-full .animal-row-2 .disabled.animal-page__link, .disabled.hero__cta, .disabled.more-link, .disabled.remote-articles-page__link, .news-full .disabled.news-full__link, .disabled.button--secondary, .disabled.button--tertiary, .button:disabled, .button--transparent:disabled, .button--primary:disabled, .node--view-mode-full .animal-row-2 .animal-page__link:disabled, .hero__cta:disabled, .more-link:disabled, .remote-articles-page__link:disabled, .news-full .news-full__link:disabled, .button--secondary:disabled, .button--tertiary:disabled {
     opacity: 0.5; }
-  .button:not(:disabled):not(.disabled), .button--transparent:not(:disabled):not(.disabled), .button--primary:not(:disabled):not(.disabled), .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled), .hero__cta:not(:disabled):not(.disabled), .news-full .news-full__link:not(:disabled):not(.disabled), .button--secondary:not(:disabled):not(.disabled), .button--tertiary:not(:disabled):not(.disabled) {
+  .button:not(:disabled):not(.disabled), .button--transparent:not(:disabled):not(.disabled), .button--primary:not(:disabled):not(.disabled), .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled), .hero__cta:not(:disabled):not(.disabled), .more-link:not(:disabled):not(.disabled), .remote-articles-page__link:not(:disabled):not(.disabled), .news-full .news-full__link:not(:disabled):not(.disabled), .button--secondary:not(:disabled):not(.disabled), .button--tertiary:not(:disabled):not(.disabled) {
     cursor: pointer; }
 
 .button.button--transparent, .button--transparent {
@@ -855,19 +855,19 @@ body.cke_editable {
     background-color: rgba(224, 224, 224, 0);
     border-color: rgba(224, 224, 224, 0); }
 
-.button, .button--primary, .node--view-mode-full .animal-row-2 .animal-page__link, .hero__cta, .news-full .news-full__link {
+.button, .button--primary, .node--view-mode-full .animal-row-2 .animal-page__link, .browse-animals .more-link, .hero__cta, .more-link, .remote-articles-page__link, .news-full .news-full__link {
   color: #ffffff;
   border-color: #007bff;
   background-color: #007bff; }
-  .button:hover, .button--primary:hover, .node--view-mode-full .animal-row-2 .animal-page__link:hover, .hero__cta:hover, .news-full .news-full__link:hover, .hover.button, .hover.button--primary, .node--view-mode-full .animal-row-2 .hover.animal-page__link, .hover.hero__cta, .news-full .hover.news-full__link, .button:focus, .button--primary:focus, .node--view-mode-full .animal-row-2 .animal-page__link:focus, .hero__cta:focus, .news-full .news-full__link:focus {
+  .button:hover, .button--primary:hover, .node--view-mode-full .animal-row-2 .animal-page__link:hover, .hero__cta:hover, .more-link:hover, .remote-articles-page__link:hover, .news-full .news-full__link:hover, .hover.button, .hover.button--primary, .node--view-mode-full .animal-row-2 .hover.animal-page__link, .hover.hero__cta, .hover.more-link, .hover.remote-articles-page__link, .news-full .hover.news-full__link, .button:focus, .button--primary:focus, .node--view-mode-full .animal-row-2 .animal-page__link:focus, .hero__cta:focus, .more-link:focus, .remote-articles-page__link:focus, .news-full .news-full__link:focus {
     color: #ffffff;
     border-color: #0069d9;
     background-color: #0069d9; }
-  .disabled.button, .disabled.button--primary, .node--view-mode-full .animal-row-2 .disabled.animal-page__link, .disabled.hero__cta, .news-full .disabled.news-full__link, .button:disabled, .button--primary:disabled, .node--view-mode-full .animal-row-2 .animal-page__link:disabled, .hero__cta:disabled, .news-full .news-full__link:disabled {
+  .disabled.button, .disabled.button--primary, .node--view-mode-full .animal-row-2 .disabled.animal-page__link, .disabled.hero__cta, .disabled.more-link, .disabled.remote-articles-page__link, .news-full .disabled.news-full__link, .button:disabled, .button--primary:disabled, .node--view-mode-full .animal-row-2 .animal-page__link:disabled, .hero__cta:disabled, .more-link:disabled, .remote-articles-page__link:disabled, .news-full .news-full__link:disabled {
     color: #ffffff;
     background-color: #007bff;
     border-color: #007bff; }
-  .button:not(:disabled):not(.disabled):active, .button--primary:not(:disabled):not(.disabled):active, .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled):active, .hero__cta:not(:disabled):not(.disabled):active, .news-full .news-full__link:not(:disabled):not(.disabled):active, .button:not(:disabled):not(.disabled).active, .button--primary:not(:disabled):not(.disabled).active, .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled).active, .hero__cta:not(:disabled):not(.disabled).active, .news-full .news-full__link:not(:disabled):not(.disabled).active {
+  .button:not(:disabled):not(.disabled):active, .button--primary:not(:disabled):not(.disabled):active, .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled):active, .hero__cta:not(:disabled):not(.disabled):active, .more-link:not(:disabled):not(.disabled):active, .remote-articles-page__link:not(:disabled):not(.disabled):active, .news-full .news-full__link:not(:disabled):not(.disabled):active, .button:not(:disabled):not(.disabled).active, .button--primary:not(:disabled):not(.disabled).active, .node--view-mode-full .animal-row-2 .animal-page__link:not(:disabled):not(.disabled).active, .hero__cta:not(:disabled):not(.disabled).active, .more-link:not(:disabled):not(.disabled).active, .remote-articles-page__link:not(:disabled):not(.disabled).active, .news-full .news-full__link:not(:disabled):not(.disabled).active {
     color: #ffffff;
     background-color: #005dc2;
     border-color: #005dc2; }
@@ -3120,60 +3120,59 @@ div[data-history-node-id='25'] {
       .animal-news-page .node--type-news .group-right .animal-news__date {
         text-align: right; } }
 
-.animal-news .views-row {
-  padding: 2em; }
-
-.animal-news .group-left {
-  display: flex;
-  justify-content: center; }
-  .animal-news .group-left .animal-news__image {
-    height: 200px;
-    width: 278px; }
-    .animal-news .group-left .animal-news__image img {
-      height: 100%;
-      width: 100%; }
-
-.animal-news .group-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-@media screen and (max-width: 480px) {
-  .animal-news .group-left .animal-news__image {
-    height: 250px; }
-    .animal-news .group-left .animal-news__image img {
-      height: 100%; }
-  .animal-news h2 {
-    line-height: 1;
-    font-size: 1.2em; }
-  .animal-news .view-animal-news {
-    overflow: hidden; }
-    .animal-news .view-animal-news .group-right, .animal-news .view-animal-news .group-left {
-      padding: 0; }
-    .animal-news .view-animal-news .group-right .animal-news__description p {
-      text-align: center;
-      width: 80%;
-      height: 100%;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-      padding: 0 1em; }
-    .animal-news .view-animal-news .row-1 .node {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .animal-news .view-animal-news .row-1 .node img {
-        height: auto; }
-      .animal-news .view-animal-news .row-1 .node h3 {
-        line-height: 1;
-        font-size: 1em; }
-      .animal-news .view-animal-news .row-1 .node p {
+.animal-news {
+  margin-top: 2em; }
+  .animal-news .views-row {
+    padding: 2em; }
+  .animal-news .group-left {
+    display: flex;
+    justify-content: center; }
+    .animal-news .group-left .animal-news__image {
+      height: 200px;
+      width: 278px; }
+      .animal-news .group-left .animal-news__image img {
+        height: 100%;
+        width: 100%; }
+  .animal-news .group-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .animal-news .group-left .animal-news__image {
+      height: 250px; }
+      .animal-news .group-left .animal-news__image img {
+        height: 100%; }
+    .animal-news h2 {
+      line-height: 1;
+      font-size: 1.2em; }
+    .animal-news .view-animal-news {
+      overflow: hidden; }
+      .animal-news .view-animal-news .group-right, .animal-news .view-animal-news .group-left {
+        padding: 0; }
+      .animal-news .view-animal-news .group-right .animal-news__description p {
+        text-align: center;
+        width: 80%;
+        height: 100%;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
         padding: 0 1em; }
-    .animal-news .view-animal-news .row-2, .animal-news .view-animal-news .row-3 {
-      display: none; } }
+      .animal-news .view-animal-news .row-1 .node {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .animal-news .view-animal-news .row-1 .node img {
+          height: auto; }
+        .animal-news .view-animal-news .row-1 .node h3 {
+          line-height: 1;
+          font-size: 1em; }
+        .animal-news .view-animal-news .row-1 .node p {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          padding: 0 1em; }
+      .animal-news .view-animal-news .row-2, .animal-news .view-animal-news .row-3 {
+        display: none; } }
 
 .node--view-mode-full .animal-content-row-1 {
   display: flex;
@@ -3331,7 +3330,7 @@ div[data-history-node-id='22'] {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 1.5em;
+    padding: 4.5em;
     z-index: 2;
     margin: auto; }
   .hero__cta {
@@ -3339,7 +3338,8 @@ div[data-history-node-id='22'] {
     left: 50%;
     top: 70%;
     transform: translate(-50%, -70%);
-    padding: 1em 1.7em; }
+    padding: 1em 1.7em;
+    z-index: 2; }
   .hero__cta:hover {
     cursor: pointer; }
   @media screen and (max-width: 480px) {
@@ -3364,11 +3364,7 @@ div[data-history-node-id='22'] {
       padding: 0 1em; } }
 
 .more-link {
-  text-align: center;
-  padding: 2em 0; }
-  @media screen and (max-width: 480px) {
-    .more-link {
-      padding: 1em; } }
+  margin-bottom: 2em; }
 
 .menu--main .menu {
   line-height: 2;

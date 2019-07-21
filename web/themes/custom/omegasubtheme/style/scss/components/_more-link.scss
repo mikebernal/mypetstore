@@ -1,8 +1,8 @@
 .more-link {
-  text-align: center;
-  padding: 2em 0;
+  @extend .button--primary;
+  margin-bottom: 2em;
+}
 
-  @media screen and (max-width: 480px) {
-    padding: 1em;
-  }
+.remote-articles-page__link {
+  @extend .button--primary;
 }

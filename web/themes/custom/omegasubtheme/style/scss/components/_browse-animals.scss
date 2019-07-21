@@ -63,6 +63,9 @@
 
     .more-link {
       padding-top: 1em;
+      @extend .button--primary;
+      
+      
     }
     
 
