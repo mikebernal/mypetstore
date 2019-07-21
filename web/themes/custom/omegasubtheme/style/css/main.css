@@ -3089,8 +3089,7 @@ div[data-history-node-id='25'] {
     justify-content: center; }
     .animal-news-page .node--type-news .group-left .animal-news__image {
       height: 200px;
-      width: 290px;
-      background: red; }
+      width: 290px; }
       .animal-news-page .node--type-news .group-left .animal-news__image img {
         height: 100%;
         width: 100%; }
@@ -3295,6 +3294,29 @@ div[data-history-node-id='25'] {
   .browse-animals .more-link {
     padding-top: 1em; } }
 
+div[data-history-node-id='22'] {
+  display: none; }
+
+#block-omegasubtheme-contactus-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left; }
+  #block-omegasubtheme-contactus-2 .contact-page__address {
+    margin-bottom: 1em; }
+    #block-omegasubtheme-contactus-2 .contact-page__address .contact-page__address-label {
+      margin-top: 1em;
+      text-transform: uppercase; }
+    #block-omegasubtheme-contactus-2 .contact-page__address .contact-page__address-value p {
+      margin: 0; }
+  #block-omegasubtheme-contactus-2 .contact-page__social-media {
+    margin-top: 1em;
+    display: flex; }
+    #block-omegasubtheme-contactus-2 .contact-page__social-media a {
+      margin-right: 1em; }
+
+.contact-us-form {
+  text-align: left; }
+
 .hero {
   position: relative; }
   .hero__image {
@@ -3349,6 +3371,7 @@ div[data-history-node-id='25'] {
       padding: 1em; } }
 
 .menu--main .menu {
+  line-height: 2;
   background: #83af9b; }
   .menu--main .menu li {
     text-align: center; }
@@ -3387,6 +3410,11 @@ div[data-history-node-id='25'] {
     display: flex; }
   .news-full .news-full__link {
     align-self: center; }
+  @media screen and (max-width: 480px) {
+    .news-full .news-full__title {
+      line-height: 1;
+      font-size: 1.3em;
+      margin-bottom: .55em; } }
 
 .pet-store-friends {
   width: 50%;

@@ -1,7 +1,7 @@
 .menu--main {
-  
   .menu {
-    
+    line-height: 2;
+
     @extend %duk-nav--horizontal;
     background: $happy-ballons;
 

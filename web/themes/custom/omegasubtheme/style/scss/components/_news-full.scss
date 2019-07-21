@@ -19,4 +19,12 @@
     align-self: center;
   }
 
+  @media screen and (max-width: 480px) {
+    .news-full__title {
+      line-height: 1;
+      font-size: 1.3em;
+      margin-bottom: .55em;
+    }
+  }
+
 }

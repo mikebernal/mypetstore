@@ -1,0 +1,36 @@
+div[data-history-node-id='22'] { 
+  display: none;
+}
+
+#block-omegasubtheme-contactus-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  .contact-page__address {
+    margin-bottom: 1em;
+    .contact-page__address-label {
+      margin-top: 1em;
+      text-transform: uppercase;
+
+    }
+    .contact-page__address-value {
+      
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .contact-page__social-media {
+    margin-top: 1em;
+    display: flex;
+    a {
+      margin-right: 1em;
+    }
+  }
+}
+
+.contact-us-form {
+  text-align: left;
+}
