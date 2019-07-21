@@ -10,11 +10,15 @@
   </div>
 
 {% else %}
+  <div class="remote-articles-page">
   <h1> {{ title }} </h1>
   {% for item in items|reverse|slice(0, 5) %}
-    <h3> {{ item.title }} </h3>
-    <p> {{ item.body }} </p>
-    <hr>
+    <div class="article">
+      <h3> {{ item.title }} </h3>
+      <p> {{ item.body }} </p>
+      <hr>
+    </div>
   {% endfor %}
   <a href="http://www.google.com">Friends Website</a>
+  </div>
 {% endif %}

@@ -3441,6 +3441,11 @@ div[data-history-node-id='22'] {
       .latest-article-block p {
         line-height: 1; } }
 
+.remote-articles-page {
+  text-align: left; }
+  .remote-articles-page .article {
+    margin-bottom: 2em; }
+
 .duk-icon-bars, .duk-icon-close {
   display: none; }
   @media screen and (max-width: 480px) {
