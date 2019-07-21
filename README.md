@@ -11,7 +11,7 @@
 ## Prerequisite
 
 1. Vagrant
-2. Cmder that supports git
+2. CLI that supports git like GitBash, Cmder
 3. Virtual Box
 4. IDE
 5. Geerlingguy's DRUPAL VM
@@ -78,3 +78,11 @@
 4. Browse animals
 5. Pet news
 6. Remote articles
+
+## To Do:
+
+1. Add lazy loading
+2. Apply BEM naming convention to all CSS selectors
+3. group all elements using field group module
+4. fix voting api module
+5. deploy to a production environment
